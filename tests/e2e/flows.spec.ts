@@ -2,13 +2,13 @@ import { test, expect, type Page } from "@playwright/test";
 
 async function ready(page: Page, path = "/discover") {
   await page.goto(path);
-  await expect(page.getByRole("button", { name: "Reset demo" })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Reset demo" }).first()).toBeVisible();
   await expect(page.getByText("Getting your campus ready…")).toHaveCount(0);
 }
 
 test("home welcomes users and discovery has its own focused route", async ({ page }) => {
   await ready(page, "/");
-  await expect(page.getByRole("heading", { name: "Less scrolling. More belonging." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Everything at UMD" })).toBeVisible();
   await expect(page.getByText("left to discover", { exact: true })).toBeVisible();
   await expect(page.getByText("sparks of interest", { exact: true })).toBeVisible();
   await expect(page.getByRole("heading", { name: "A little curiosity goes a long way." })).toBeVisible();
@@ -18,7 +18,7 @@ test("home welcomes users and discovery has its own focused route", async ({ pag
   await page.getByRole("link", { name: "Start discovering", exact: true }).click();
   await expect(page).toHaveURL(/\/discover$/);
   await expect(page.getByTestId("swipe-card")).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Less scrolling. More belonging." })).toHaveCount(0);
+  await expect(page.getByRole("heading", { name: "Everything at UMD" })).toHaveCount(0);
   await expect(page.getByRole("link", { name: "Discover", exact: true })).toHaveAttribute("aria-current", "page");
   await page.getByRole("button", { name: "Interested", exact: true }).click();
   await expect(page.getByRole("heading", { name: "One more round?" })).toBeVisible();
@@ -115,11 +115,11 @@ test("profile saves across reload and reset needs confirmation", async ({ page }
   await expect(page.getByLabel("Display name")).toHaveValue("Taylor Terp");
   await expect(page.getByLabel("Interest tags")).toHaveValue("Art, Hiking, Games");
   await page.evaluate(() => localStorage.setItem("other-app", "untouched"));
-  page.once("dialog", dialog => dialog.dismiss());
-  await page.getByRole("button", { name: "Reset demo" }).click();
+  await page.getByRole("button", { name: "Reset demo" }).first().click();
+  await page.getByRole("button", { name: "Cancel" }).click();
   await expect(page.getByLabel("Display name")).toHaveValue("Taylor Terp");
-  page.once("dialog", dialog => dialog.accept());
-  await page.getByRole("button", { name: "Reset demo" }).click();
+  await page.getByRole("button", { name: "Reset demo" }).first().click();
+  await page.getByRole("dialog").getByRole("button", { name: "Reset demo" }).click();
   await expect(page.getByLabel("Display name")).toHaveValue("Alex Morgan");
   expect(await page.evaluate(() => localStorage.getItem("other-app"))).toBe("untouched");
 });

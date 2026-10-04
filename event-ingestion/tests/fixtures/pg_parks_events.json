@@ -1,0 +1,51 @@
+{
+ "events": [
+  {
+   "id": 10007001,
+   "status": "publish",
+   "url": "https://www.pgparks.com/event_list/girls-in-aviation",
+   "title": "Girls in Aviation",
+   "description": "<p>Meet women in the aviation industry, participate in aviation activities, play games, and try flight simulators.</p>",
+   "excerpt": "Meet women in the aviation industry and try flight simulators.",
+   "image": {"url": "https://www.pgparks.com/wp-content/uploads/2026/09/girls-aviation.jpg",
+             "sizes": {"large": {"url": "https://www.pgparks.com/wp-content/uploads/2026/09/girls-aviation-1024x681.jpg"}}},
+   "all_day": false,
+   "start_date": "2026-10-10 11:00:00",
+   "end_date": "2026-10-10 14:00:00",
+   "utc_start_date": "2026-10-10 15:00:00",
+   "utc_end_date": "2026-10-10 18:00:00",
+   "timezone": "UTC-5",
+   "cost": "Free",
+   "cost_details": {"currency_symbol": "$", "values": []},
+   "website": "",
+   "hide_from_listings": false,
+   "categories": [{"name": "All Ages"}, {"name": "Free"}, {"name": "History"}],
+   "tags": [{"name": "College Park Aviation Museum", "slug": "college-park-aviation-museum"}],
+   "venue": [],
+   "organizer": [],
+   "is_virtual": false
+  },
+  {
+   "id": 10008038,
+   "status": "publish",
+   "url": "https://www.pgparks.com/event_list/steam-hour-9/2026-10-24",
+   "title": "STEAM Hour",
+   "description": "<p>Hands-on science and art for kids.</p>",
+   "excerpt": "",
+   "image": null,
+   "all_day": false,
+   "utc_start_date": "2026-10-24 14:30:00",
+   "utc_end_date": "2026-10-24 15:30:00",
+   "cost": "$4 &ndash; $6",
+   "cost_details": {"currency_symbol": "$", "values": ["4", "6"]},
+   "website": "",
+   "hide_from_listings": false,
+   "categories": [{"name": "Youth"}, {"name": "Nature &amp; Outdoor"}],
+   "tags": [{"name": "College Park Aviation Museum", "slug": "college-park-aviation-museum"}],
+   "venue": [],
+   "is_virtual": false
+  }
+ ],
+ "total": 2,
+ "total_pages": 1
+}

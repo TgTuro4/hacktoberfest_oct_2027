@@ -1,0 +1,46 @@
+{
+ "_comment": "Hand-written from the Discovery API v2 schema (developer.ticketmaster.com); not a captured response.",
+ "_embedded": {
+  "events": [
+   {
+    "name": "Example Band: Fall Tour",
+    "id": "vvG1zZ9example",
+    "url": "https://www.ticketmaster.com/example-band-fall-tour/event/1500example",
+    "images": [
+     {"ratio": "16_9", "url": "https://s1.ticketm.net/dam/a/123/small.jpg", "width": 640, "height": 360},
+     {"ratio": "16_9", "url": "https://s1.ticketm.net/dam/a/123/large.jpg", "width": 2048, "height": 1152},
+     {"ratio": "3_2", "url": "https://s1.ticketm.net/dam/a/123/other.jpg", "width": 3048, "height": 2032}
+    ],
+    "dates": {
+     "start": {"localDate": "2026-11-06", "localTime": "20:00:00", "dateTime": "2026-11-07T01:00:00Z"},
+     "timezone": "America/New_York",
+     "status": {"code": "onsale"}
+    },
+    "classifications": [
+     {"segment": {"name": "Music"}, "genre": {"name": "Rock"}, "subGenre": {"name": "Alternative Rock"}}
+    ],
+    "priceRanges": [{"type": "standard", "currency": "USD", "min": 35.0, "max": 89.5}],
+    "_embedded": {
+     "venues": [
+      {
+       "name": "The Fillmore Silver Spring",
+       "postalCode": "20910",
+       "city": {"name": "Silver Spring"},
+       "state": {"stateCode": "MD"},
+       "address": {"line1": "8656 Colesville Rd"},
+       "location": {"longitude": "-77.0277", "latitude": "38.9971"}
+      }
+     ]
+    }
+   },
+   {
+    "name": "Cancelled Show",
+    "id": "vvG1zZ9cancel",
+    "url": "https://www.ticketmaster.com/cancelled/event/1",
+    "dates": {"start": {"localDate": "2026-11-08"}, "status": {"code": "cancelled"}},
+    "_embedded": {"venues": [{"name": "Somewhere"}]}
+   }
+  ]
+ },
+ "page": {"size": 200, "totalElements": 2, "totalPages": 1, "number": 0}
+}

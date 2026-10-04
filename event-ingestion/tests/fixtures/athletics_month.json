@@ -1,0 +1,65 @@
+[
+ {
+  "date": "2026-10-11T00:00:00",
+  "events": [
+   {
+    "id": 21540,
+    "date": "2026-10-11T12:00:00",
+    "time": "12 PM",
+    "conference": true,
+    "location": "College Park, MD",
+    "location_indicator": "H",
+    "at_vs": "vs",
+    "status": "O",
+    "noplay_text": null,
+    "type": "R",
+    "sport": {"id": 0, "title": "Women's Soccer", "abbreviation": "WSOC", "shortname": "wsoc"},
+    "opponent": {"id": 190, "title": "#12 UCLA", "location": "Los Angeles, CA"},
+    "media": {
+     "video": {"title": "Watch (B1G+)", "url": "https://www.bigtenplus.com/en-int/livestream/ucla-at-maryland/2195068"},
+     "tickets": {"title": "Tickets", "url": "https://umterps.evenue.net/event/WS26/WS07?utm_source=umterps&utm_medium=web"},
+     "preview": null
+    },
+    "result": {"status": null, "team_score": null, "opponent_score": null, "boxscore": null},
+    "facility": {"id": 15, "title": "Ludwig Field", "url": ""},
+    "tournament": null
+   },
+   {
+    "id": 22391,
+    "date": "2026-10-11T00:00:00",
+    "time": "",
+    "conference": false,
+    "location": "Charlotte, NC",
+    "location_indicator": "A",
+    "at_vs": "at",
+    "status": "O",
+    "noplay_text": null,
+    "type": "X",
+    "sport": {"id": 0, "title": "Women's Tennis", "abbreviation": "WTEN", "shortname": "wten"},
+    "opponent": {"id": 327, "title": "49er Invite", "location": "Charlotte, NC"},
+    "media": {},
+    "result": {},
+    "facility": null,
+    "tournament": null
+   },
+   {
+    "id": 22500,
+    "date": "2026-10-17T00:00:00",
+    "time": "TBA",
+    "conference": true,
+    "location": "College Park, MD",
+    "location_indicator": "H",
+    "at_vs": "vs",
+    "status": "O",
+    "noplay_text": null,
+    "type": "R",
+    "sport": {"id": 0, "title": "Football", "abbreviation": "FB", "shortname": "football"},
+    "opponent": {"id": 1, "title": "Ohio State", "location": "Columbus, OH"},
+    "media": {"tickets": {"url": "https://umterps.evenue.net/football"}},
+    "result": {},
+    "facility": {"id": 1, "title": "SECU Stadium", "url": ""},
+    "tournament": null
+   }
+  ]
+ }
+]

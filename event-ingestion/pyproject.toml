@@ -1,0 +1,43 @@
+[project]
+name = "umd-events"
+version = "0.1.0"
+description = "Event ingestion pipeline for events on and around the University of Maryland, College Park"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.32",
+    "requests-cache>=1.2",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "icalendar>=6.0",
+    "python-dateutil>=2.9",
+    "rapidfuzz>=3.9",
+    "pydantic>=2.7",
+    "duckdb>=1.1",
+    "pytz>=2024.1",  # duckdb needs it to return TIMESTAMPTZ values
+    "python-dotenv>=1.0",
+    "fastapi>=0.115",
+    "uvicorn>=0.30",
+    "tzdata>=2024.1",
+]
+
+[project.scripts]
+umd-events = "umd_events.cli:main"
+
+[project.optional-dependencies]
+snowflake = ["snowflake-connector-python>=3.12"]
+embeddings = ["fastembed>=0.4"]
+browser = ["playwright>=1.47"]
+
+[dependency-groups]
+dev = ["pytest>=8.3"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/umd_events"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

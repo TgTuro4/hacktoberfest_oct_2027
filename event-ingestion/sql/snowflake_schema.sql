@@ -1,0 +1,131 @@
+-- Generated from src/umd_events/storage/schema.py. Do not edit by hand.
+
+CREATE TABLE IF NOT EXISTS RAW_EVENTS (
+    INGESTION_ID STRING,
+    SOURCE STRING,
+    SOURCE_EVENT_ID STRING,
+    SOURCE_URL STRING,
+    RAW_DATA VARIANT,
+    SCRAPED_AT TIMESTAMP_TZ,
+    SCRAPER_VERSION STRING,
+    CONTENT_HASH STRING
+)
+COMMENT = 'Every distinct version of every source record, exactly as collected.';
+
+CREATE TABLE IF NOT EXISTS EVENTS (
+    EVENT_ID STRING,
+    TITLE STRING,
+    SHORT_DESCRIPTION STRING,
+    DESCRIPTION STRING,
+    START_TIME TIMESTAMP_TZ,
+    END_TIME TIMESTAMP_TZ,
+    ALL_DAY BOOLEAN,
+    VENUE_ID STRING,
+    VENUE_NAME STRING,
+    ADDRESS STRING,
+    LATITUDE FLOAT,
+    LONGITUDE FLOAT,
+    DISTANCE_MILES FLOAT,
+    ORGANIZER_NAME STRING,
+    SOURCE STRING,
+    SOURCE_EVENT_ID STRING,
+    SOURCE_URL STRING,
+    SOURCES ARRAY,
+    IMAGE_URL STRING,
+    REGISTRATION_URL STRING,
+    PRICE_MIN FLOAT,
+    PRICE_MAX FLOAT,
+    IS_FREE BOOLEAN,
+    PRICE_DISPLAY STRING,
+    IS_UMD BOOLEAN,
+    IS_ONLINE BOOLEAN,
+    EVENT_TYPE STRING,
+    TAGS ARRAY,
+    EXTRA VARIANT,
+    CONTENT_HASH STRING,
+    CREATED_AT TIMESTAMP_TZ,
+    UPDATED_AT TIMESTAMP_TZ,
+    LAST_SEEN_AT TIMESTAMP_TZ
+)
+COMMENT = 'Deduplicated, user-facing events. distance_miles is from McKeldin Mall.';
+
+CREATE TABLE IF NOT EXISTS EVENT_SOURCES (
+    CANONICAL_EVENT_ID STRING,
+    SOURCE STRING,
+    SOURCE_EVENT_ID STRING,
+    SOURCE_URL STRING,
+    SOURCE_RECORD_ID STRING,
+    DISCOVERED_AT TIMESTAMP_TZ,
+    LAST_SEEN_AT TIMESTAMP_TZ
+)
+COMMENT = 'Which source listings were merged into each canonical event.';
+
+CREATE TABLE IF NOT EXISTS VENUES (
+    VENUE_ID STRING,
+    CANONICAL_NAME STRING,
+    ADDRESS STRING,
+    LATITUDE FLOAT,
+    LONGITUDE FLOAT,
+    ALIASES ARRAY,
+    IS_UMD BOOLEAN
+);
+
+CREATE TABLE IF NOT EXISTS INGESTION_RUNS (
+    RUN_ID STRING,
+    SOURCE STRING,
+    STARTED_AT TIMESTAMP_TZ,
+    COMPLETED_AT TIMESTAMP_TZ,
+    STATUS STRING,
+    EVENTS_FOUND INTEGER,
+    EVENTS_INSERTED INTEGER,
+    EVENTS_UPDATED INTEGER,
+    EVENTS_REJECTED INTEGER,
+    ERROR_MESSAGE STRING
+);
+
+CREATE TABLE IF NOT EXISTS EVENT_EMBEDDINGS (
+    EVENT_ID STRING,
+    MODEL STRING,
+    EMBEDDING VECTOR(FLOAT, 384),
+    CONTENT_HASH STRING,
+    CREATED_AT TIMESTAMP_TZ
+)
+COMMENT = 'Optional; filled by `umd-events embed`.';
+
+CREATE OR REPLACE VIEW UPCOMING_EVENTS AS
+SELECT *
+FROM EVENTS
+WHERE COALESCE(end_time, start_time) >= CURRENT_TIMESTAMP()
+ORDER BY start_time;
+
+CREATE OR REPLACE VIEW FREE_UPCOMING_EVENTS AS
+SELECT *
+FROM UPCOMING_EVENTS
+WHERE is_free = TRUE;
+
+-- The shape the swipe/browse frontend reads.
+CREATE OR REPLACE VIEW FRONTEND_EVENTS AS
+SELECT
+    event_id AS id,
+    title,
+    image_url,
+    short_description,
+    start_time,
+    end_time,
+    all_day,
+    distance_miles,
+    venue_name AS venue,
+    address,
+    latitude,
+    longitude,
+    tags,
+    price_display AS price,
+    is_free,
+    registration_url,
+    source,
+    sources,
+    source_url,
+    event_type,
+    is_umd,
+    is_online
+FROM UPCOMING_EVENTS;

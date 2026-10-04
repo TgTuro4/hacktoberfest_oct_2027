@@ -1,0 +1,237 @@
+[
+ {
+  "id": 455460,
+  "title": "Flower Power Hour",
+  "url": "https://calendar.umd.edu/flower-power-hour",
+  "slug": "flower-power-hour",
+  "startDate": "2026-10-02T14:00:00+00:00",
+  "endDate": "2026-12-25T15:00:00+00:00",
+  "allDay": false,
+  "multiDay": true,
+  "rrule": "DTSTART:20260911T000000Z\nRRULE:FREQ=WEEKLY;UNTIL=20261201T235959Z;BYDAY=FR",
+  "summary": "<p>Join us Friday afternoons to remove invasive plants and help our native flowers, grasses, shrubs, and trees!</p>",
+  "description": "<p>Join us Friday afternoons to remove invasive plants and help our native flowers, grasses, shrubs, and trees!</p><p>No experience needed — just show up ready to get your hands dirty (we provide gloves!) to help cultivate our living campus.</p><p>All Friday Flower Power Hours take place from 2pm - 3pm</p>",
+  "locationType": [
+   "on_campus"
+  ],
+  "venueDescription": "<p>Locations of the events change weekly and are included in the registration form.</p>",
+  "offCampusTitle": null,
+  "offCampusLink": null,
+  "building": [],
+  "address": [],
+  "image": [
+   {
+    "url": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/Friday-Flower-Power-Hour_2026-08-29-122730_kfxa.jpg?w=1080&h=1080&auto=compress%2Cformat&fit=crop&dm=1788006450&s=3e05f6d7c9c856caf53b7a73a38c6c0c"
+   }
+  ],
+  "audience": [
+   {
+    "title": "Undergraduate Students",
+    "slug": "current-students"
+   },
+   {
+    "title": "Graduate Students",
+    "slug": "graduate-students"
+   },
+   {
+    "title": "Alumni",
+    "slug": "alumni"
+   },
+   {
+    "title": "Faculty",
+    "slug": "faculty"
+   },
+   {
+    "title": "Staff",
+    "slug": "staff"
+   },
+   {
+    "title": "Friends",
+    "slug": "friends"
+   }
+  ],
+  "status": [],
+  "units": [],
+  "tags": [],
+  "topics": [
+   {
+    "title": "Community Engagement",
+    "slug": "community-engagement"
+   },
+   {
+    "title": "Health and Wellness",
+    "slug": "health-and-wellness"
+   },
+   {
+    "title": "Student Life",
+    "slug": "student-life"
+   }
+  ]
+ },
+ {
+  "id": 455511,
+  "title": "Maryland Field Hockey vs Delaware",
+  "url": "https://calendar.umd.edu/maryland-field-hockey-6-2-2-2",
+  "slug": "maryland-field-hockey-6-2-2-2",
+  "startDate": "2026-10-04T12:00:00+00:00",
+  "endDate": "2026-10-04T14:00:00+00:00",
+  "allDay": false,
+  "multiDay": false,
+  "rrule": null,
+  "summary": "<p>Watch Maryland field hockey compete at the Field Hockey &amp; Lacrosse Complex! Come support one of the nation's top field hockey programs on their home turf.</p>",
+  "description": "<p>Watch Maryland field hockey compete at the Field Hockey &amp; Lacrosse Complex! Come support one of the nation's top field hockey programs on their home turf.</p>",
+  "locationType": [
+   "on_campus"
+  ],
+  "venueDescription": null,
+  "offCampusTitle": null,
+  "offCampusLink": null,
+  "building": [],
+  "address": [],
+  "image": [
+   {
+    "url": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/Screenshot-2025-08-27-at-1.21.24-PM.png?w=2312&h=1532&auto=compress%2Cformat&fit=crop&dm=1764638463&s=828dedb7b7b20c98a34aef58be6f6d90"
+   }
+  ],
+  "audience": [
+   {
+    "title": "Undergraduate Students",
+    "slug": "current-students"
+   },
+   {
+    "title": "Graduate Students",
+    "slug": "graduate-students"
+   },
+   {
+    "title": "Prospective Students",
+    "slug": "prospective-students"
+   },
+   {
+    "title": "Alumni",
+    "slug": "alumni"
+   },
+   {
+    "title": "Faculty",
+    "slug": "faculty"
+   },
+   {
+    "title": "Staff",
+    "slug": "staff"
+   },
+   {
+    "title": "Parents & Families",
+    "slug": "parents"
+   },
+   {
+    "title": "Friends",
+    "slug": "friends"
+   },
+   {
+    "title": "Campus Leaders",
+    "slug": "campus-leaders"
+   },
+   {
+    "title": "External Media",
+    "slug": "external-media"
+   }
+  ],
+  "status": [],
+  "units": [],
+  "tags": [],
+  "topics": [
+   {
+    "title": "Athletics and Recreation",
+    "slug": "athletics-and-recreation"
+   },
+   {
+    "title": "Arts, Entertainment and Culture",
+    "slug": "arts-entertainment-and-culture"
+   },
+   {
+    "title": "Community Engagement",
+    "slug": "community-engagement"
+   },
+   {
+    "title": "Student Life",
+    "slug": "student-life"
+   }
+  ]
+ },
+ {
+  "id": 454281,
+  "title": "Counterpoint: Rhapsody in Blue ft. Conrad Tao & Caleb Teicher",
+  "url": "https://calendar.umd.edu/counterpoint-rhapsody-in-blue-ft-conrad-tao-caleb-teicher",
+  "slug": "counterpoint-rhapsody-in-blue-ft-conrad-tao-caleb-teicher",
+  "startDate": "2026-10-04T15:00:00+00:00",
+  "endDate": "2026-10-04T17:00:00+00:00",
+  "allDay": false,
+  "multiDay": false,
+  "rrule": null,
+  "summary": "<p>A one-of-a-kind project—part dance, part piano recital, with a dose of theatrics!</p>",
+  "description": "<p><em style=\"background-color:rgb(255, 255, 255);\"><i>Counterpoint</i></em><span style=\"background-color:rgb(255, 255, 255);\"> is a one-of-a-kind project—part dance and part piano recital, with a dose of theatrics—that demands to be experienced live! The collaboration between great American composer and pianist Conrad Tao and outstanding tap dancer Caleb Teicher is a uniquely fresh and deeply vit",
+  "locationType": [
+   "on_campus"
+  ],
+  "venueDescription": null,
+  "offCampusTitle": null,
+  "offCampusLink": null,
+  "building": [],
+  "address": [],
+  "image": [
+   {
+    "url": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/Counterpoint-2.jpeg?w=1250&h=833&auto=compress%2Cformat&fit=crop&dm=1782917443&s=223b8d25fe4db844addf8bc347947740"
+   }
+  ],
+  "audience": [
+   {
+    "title": "Undergraduate Students",
+    "slug": "current-students"
+   },
+   {
+    "title": "Graduate Students",
+    "slug": "graduate-students"
+   },
+   {
+    "title": "Prospective Students",
+    "slug": "prospective-students"
+   },
+   {
+    "title": "Alumni",
+    "slug": "alumni"
+   },
+   {
+    "title": "Faculty",
+    "slug": "faculty"
+   },
+   {
+    "title": "Staff",
+    "slug": "staff"
+   },
+   {
+    "title": "Parents & Families",
+    "slug": "parents"
+   },
+   {
+    "title": "Friends",
+    "slug": "friends"
+   },
+   {
+    "title": "Campus Leaders",
+    "slug": "campus-leaders"
+   },
+   {
+    "title": "External Media",
+    "slug": "external-media"
+   }
+  ],
+  "status": [],
+  "units": [],
+  "tags": [],
+  "topics": [
+   {
+    "title": "Arts, Entertainment and Culture",
+    "slug": "arts-entertainment-and-culture"
+   }
+  ]
+ }
+]

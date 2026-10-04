@@ -1,0 +1,42 @@
+-- Optional fictional fixtures. Run after 01. Reruns preserve edits and dates.
+MERGE INTO LIFEDATA.LIFEDATA.GROUPS t
+USING (SELECT COLUMN1 AS NAME, COLUMN2 AS DESCRIPTION, COLUMN3 AS LOCATION, COLUMN4 AS MEETING
+  FROM VALUES
+    ('Demo: Campus Coding Club', 'Computer science students build Python projects and prepare for AI hackathons.', 'Iribe Center', 'Wednesdays at 5 PM'),
+    ('Demo: K-pop Fan Society', 'BTS and BLACKPINK fans learn dance choreography and find friends for concerts.', 'Stamp Student Union', 'Fridays at 6 PM')) s
+ON t.GROUP_NAME = s.NAME
+WHEN NOT MATCHED THEN INSERT (GROUP_NAME, GROUP_DESCRIPTION, LOCATION, MEETING_DETAILS, CAMPUS, IS_ACTIVE, IS_DEMO, CREATED_AT)
+VALUES (s.NAME, s.DESCRIPTION, s.LOCATION, s.MEETING, 'UMD', 1, TRUE, CURRENT_TIMESTAMP());
+
+MERGE INTO LIFEDATA.LIFEDATA.EVENTS t
+USING (SELECT COLUMN1 AS TITLE, COLUMN2 AS DESCRIPTION, COLUMN3 AS LOCATION, COLUMN4 AS DAYS
+  FROM VALUES
+    ('Demo: Beginner AI Hackathon', 'Build Python and machine learning projects with computer science students.', 'Iribe Center', 3),
+    ('Demo: K-pop Dance Workshop', 'Learn BTS and BLACKPINK choreography with other Korean pop music fans.', 'Stamp Student Union', 4)) s
+ON t.EVENT_TITLE = s.TITLE
+WHEN NOT MATCHED THEN INSERT (EVENT_TITLE, EVENT_DESCRIPTION, LOCATION, STARTS_AT, CAMPUS, IS_ACTIVE, IS_DEMO, CREATED_AT)
+VALUES (s.TITLE, s.DESCRIPTION, s.LOCATION, DATEADD('day', s.DAYS, CURRENT_TIMESTAMP()), 'UMD', 1, TRUE, CURRENT_TIMESTAMP());
+
+MERGE INTO LIFEDATA.LIFEDATA.TAGS t
+USING (SELECT COLUMN1 AS NAME FROM VALUES ('Computer science'), ('Python'), ('AI'), ('K-pop'), ('BTS'), ('Dance')) s
+ON t.TAG_NAME = s.NAME
+WHEN NOT MATCHED THEN INSERT (TAG_NAME) VALUES (s.NAME);
+
+MERGE INTO LIFEDATA.LIFEDATA.GROUP_TAGS t
+USING (SELECT DISTINCT g.GROUP_ID, tags.TAG_ID FROM LIFEDATA.LIFEDATA.GROUPS g
+  JOIN LIFEDATA.LIFEDATA.TAGS tags ON
+    (g.GROUP_NAME = 'Demo: Campus Coding Club' AND tags.TAG_NAME IN ('Computer science','Python','AI')) OR
+    (g.GROUP_NAME = 'Demo: K-pop Fan Society' AND tags.TAG_NAME IN ('K-pop','BTS','Dance'))) s
+ON t.GROUP_ID = s.GROUP_ID AND t.TAG_ID = s.TAG_ID
+WHEN NOT MATCHED THEN INSERT (GROUP_ID, TAG_ID) VALUES (s.GROUP_ID, s.TAG_ID);
+
+MERGE INTO LIFEDATA.LIFEDATA.EVENT_TAGS t
+USING (SELECT DISTINCT e.EVENT_ID, tags.TAG_ID FROM LIFEDATA.LIFEDATA.EVENTS e
+  JOIN LIFEDATA.LIFEDATA.TAGS tags ON
+    (e.EVENT_TITLE = 'Demo: Beginner AI Hackathon' AND tags.TAG_NAME IN ('Computer science','Python','AI')) OR
+    (e.EVENT_TITLE = 'Demo: K-pop Dance Workshop' AND tags.TAG_NAME IN ('K-pop','BTS','Dance'))) s
+ON t.EVENT_ID = s.EVENT_ID AND t.TAG_ID = s.TAG_ID
+WHEN NOT MATCHED THEN INSERT (EVENT_ID, TAG_ID) VALUES (s.EVENT_ID, s.TAG_ID);
+
+SELECT COUNT(*) AS EVENT_COUNT FROM LIFEDATA.LIFEDATA.EVENTS;
+SELECT COUNT(*) AS GROUP_COUNT FROM LIFEDATA.LIFEDATA.GROUPS;

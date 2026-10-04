@@ -142,7 +142,7 @@ kbd { font-family: var(--body); display: inline-grid; place-items: center; min-w
 /* The deck sits above the details panel so a swiped card slides over it, never under it. */
 .deck-column { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; min-width: 0; }
 /* Deck fills the space between the filter chips and the tab bar, so the buttons never fall below the fold. */
-.deck { position: relative; width: 100%; max-width: 420px; height: clamp(360px, calc(100svh - 212px - env(safe-area-inset-top) - env(safe-area-inset-bottom)), 720px); }
+.deck { position: relative; width: 100%; max-width: 420px; height: clamp(360px, calc(100svh - 246px - env(safe-area-inset-top) - env(safe-area-inset-bottom)), 720px); }
 .deck .poster { height: 100%; }
 .deck .poster-info { padding-bottom: 104px; }
 .deck .poster::after { background: linear-gradient(to top, rgba(0,0,0,.92) 0%, rgba(0,0,0,.7) 34%, rgba(0,0,0,0) 62%); }
@@ -192,7 +192,7 @@ kbd { font-family: var(--body); display: inline-grid; place-items: center; min-w
   .discovery-heading { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
 }
 @media (min-width: 900px) {
-  .deck { height: clamp(420px, calc(100vh - 170px), 720px); }
+  .deck { height: clamp(420px, calc(100vh - 204px), 720px); }
   .key-hint { display: flex; gap: 22px; justify-content: center; margin-top: 14px; color: var(--muted); font-size: 14px; }
   .key-hint span { display: inline-flex; align-items: center; gap: 8px; }
   .feed-toolbar { max-width: 420px; }
@@ -203,6 +203,19 @@ kbd { font-family: var(--body); display: inline-grid; place-items: center; min-w
   .discover-layout { grid-template-columns: 420px minmax(0, 1fr); align-items: start; gap: 40px; }
   .card-details { margin: 0; position: sticky; top: 40px; }
 }
+
+/* AI ranking status line on Discover: one quiet row, never blocks swiping. */
+.ai-status { display: flex; align-items: center; gap: 8px; min-height: 28px; margin: -4px 0 10px; font-size: 13px; color: var(--muted); }
+.ai-status .ai-icon { flex-shrink: 0; color: var(--gold); }
+.ai-ranked .ai-icon, .ai-ranking .ai-icon { color: var(--red); }
+.ai-ranked { color: var(--ink); font-weight: 600; }
+.ai-ranking .ai-icon { animation: ai-pulse 1s ease-in-out infinite alternate; }
+@keyframes ai-pulse { to { opacity: .35; transform: scale(.85); } }
+.ai-status > span:not(.ai-actions) { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ai-actions { margin-left: auto; display: flex; gap: 12px; flex-shrink: 0; }
+.ai-link { background: none; padding: 4px 0; min-height: 28px; font-size: 13px; font-weight: 700; color: var(--red); text-decoration: underline; text-underline-offset: 3px; }
+.official-link { display: inline-block; margin-top: 16px; font-size: 14px; }
+.data-badge { display: inline-block; margin-top: 10px !important; padding: 4px 12px; border-radius: 999px; background: var(--white); border: 1px solid var(--line); font-size: 12px !important; color: var(--muted); }
 
 /* ---------- Home ----------
    The hero (cards, headline, button) is sized to exactly fill the screen between the chrome,

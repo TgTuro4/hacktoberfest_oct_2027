@@ -10,7 +10,7 @@ const EXIT_MS = 240;
 /** Keyboard swipes have no drag lead-in, so they glide out slower to read as a swipe. */
 const KEY_EXIT_MS = 650;
 
-export function SwipeCard({ item, next, onDecision, canUndo, onUndo }: { item: CampusItem; next?: CampusItem; onDecision: (decision: Decision) => boolean; canUndo: boolean; onUndo: () => void }) {
+export function SwipeCard({ item, next, onDecision, canUndo, onUndo }: { item: CampusItem; next?: CampusItem; onDecision: (decision: Decision) => Promise<boolean>; canUndo: boolean; onUndo: () => void }) {
   const [offset, setOffset] = useState(0);
   const [exiting, setExiting] = useState(false);
   const [exitMs, setExitMs] = useState(EXIT_MS);
@@ -27,8 +27,9 @@ export function SwipeCard({ item, next, onDecision, canUndo, onUndo }: { item: C
     setExiting(true);
     const distance = Math.max(window.innerWidth, 600);
     setOffset(decision === "interested" ? distance : -distance);
-    timer.current = setTimeout(() => {
-      if (!onDecision(decision)) {
+    // In live mode the server must confirm before the card is gone; a failed save brings it back.
+    timer.current = setTimeout(async () => {
+      if (!await onDecision(decision)) {
         busy.current = false;
         setExiting(false);
         setOffset(0);
@@ -121,6 +122,7 @@ export function SwipeCard({ item, next, onDecision, canUndo, onUndo }: { item: C
         <div><dt><Icon name="pin" size={18} /><span>Where</span></dt><dd>{item.location || "Location to come"}</dd></div>
         <div><dt><Icon name="clock" size={18} /><span>When</span></dt><dd>{schedule(item)}{item.kind === "event" && <small>Campus time, America/New_York</small>}</dd></div>
       </dl>
+      {item.sourceUrl && <a className="text-link official-link" href={item.sourceUrl} target="_blank" rel="noopener noreferrer">View the official listing</a>}
     </section>
   </div>;
 }

@@ -11,7 +11,7 @@ export function schedule(item: CampusItem) {
   if (item.kind === "group") return item.meetingDetails || "Meeting details to come";
   const day = new Date(`${item.date}T12:00:00`);
   if (Number.isNaN(day.getTime())) return "Date to come";
-  return `${day.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })} · ${clockTime(item.time) || "Time to come"}`;
+  return `${day.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })} · ${item.allDay ? "All day" : clockTime(item.time) || "Time to come"}`;
 }
 
 /** The glanceable version shown on the poster: "Fri, Oct 9 at 7:00 PM". */
@@ -20,8 +20,8 @@ export function shortSchedule(item: CampusItem) {
   const day = new Date(`${item.date}T12:00:00`);
   if (Number.isNaN(day.getTime())) return "Date to come";
   const date = day.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
-  const time = clockTime(item.time);
-  return time ? `${date} at ${time}` : date;
+  const time = item.allDay ? "" : clockTime(item.time);
+  return item.allDay ? `${date}, all day` : time ? `${date} at ${time}` : date;
 }
 
 const glyphs: [RegExp, IconName][] = [

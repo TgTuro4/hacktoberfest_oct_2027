@@ -66,8 +66,8 @@ export default function CreatePage() {
     if (file.size > 3 * 1024 * 1024) { setImageError("That image is too large. The limit is 3 MB."); event.target.value = ""; return; }
     setImage(URL.createObjectURL(file));
   }
-  function publish(draft: Draft) {
-    if (!addItem(draft)) return false;
+  async function publish(draft: Draft) {
+    if (!await addItem(draft)) return false;
     setSuccess(`“${draft.title.trim()}” is published! Find it in Discover.`);
     if (selected !== null) setPublished(list => [...list, selected]);
     setSelected(null); setInitial(emptyDraft(kind)); setFormVersion(v => v + 1);

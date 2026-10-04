@@ -17,6 +17,11 @@ export interface CampusItem extends Draft {
   demo: boolean;
   /** Optional cover photo URL (e.g. from the event listing). Falls back to the poster art if missing or broken. */
   image?: string;
+  isActive?: boolean;
+  startsAt?: string;
+  /** Link to the official listing (live catalog cards). */
+  sourceUrl?: string;
+  allDay?: boolean;
   color: number;
   createdAt: string;
 }

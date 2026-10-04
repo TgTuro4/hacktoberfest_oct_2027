@@ -60,6 +60,8 @@ state between runs. Delete `data/` to start over.
 
 ## Loading into Snowflake
 
+Full handoff (every column, relationships, load options, verification): [SNOWFLAKE_HANDOFF.md](SNOWFLAKE_HANDOFF.md).
+
 Table definitions live in `src/umd_events/storage/schema.py`; `sql/snowflake_schema.sql` and
 `sql/snowflake_load.sql` are generated from it (`umd-events snowflake-sql`).
 

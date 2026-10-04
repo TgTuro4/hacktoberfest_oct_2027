@@ -52,8 +52,11 @@ def copy_sql(table: Table, staging: str, stage_path: str) -> str:
 
 CLEANUP_SQL = [
     # Future events missing from the latest snapshot were cancelled upstream or merged into another event.
-    "DELETE FROM EVENTS WHERE start_time >= CURRENT_TIMESTAMP() AND event_id NOT IN (SELECT event_id FROM EVENTS_STAGING)",
-    "DELETE FROM EVENT_SOURCES WHERE canonical_event_id NOT IN (SELECT event_id FROM EVENTS)",
+    # Guarded so an empty/missing EVENTS upload never wipes the table.
+    "DELETE FROM EVENTS WHERE start_time >= CURRENT_TIMESTAMP() "
+    "AND event_id NOT IN (SELECT event_id FROM EVENTS_STAGING) AND EXISTS (SELECT 1 FROM EVENTS_STAGING)",
+    "DELETE FROM EVENT_SOURCES WHERE canonical_event_id NOT IN (SELECT event_id FROM EVENTS) "
+    "AND EXISTS (SELECT 1 FROM EVENTS_STAGING)",
 ]
 
 

@@ -18,7 +18,7 @@ export function ItemForm({ initial, onPublish }: { initial: Draft; onPublish: (d
     if (!problems.length) onPublish(result);
   }
   return <form onSubmit={submit} className="item-form">
-    <div className="panel-heading"><span className="step-label">REVIEW & MAKE IT YOURS</span><h2>{draft.kind === "event" ? "The event details" : "The group details"}</h2><p>Give people a reason to say “I’m in.”</p></div>
+    <div className="panel-heading"><span className="step-label">Review and make it yours</span><h2>{draft.kind === "event" ? "The event details" : "The group details"}</h2><p>Give people a reason to say “I’m in.”</p></div>
     {errors.length > 0 && <div role="alert" className="notice error">{errors.map(error => <p key={error}>{error}</p>)}</div>}
     <label>{draft.kind === "event" ? "Event title" : "Group name"} <span>*</span><input aria-label={draft.kind === "event" ? "Event title" : "Group name"} value={draft.title} onChange={e => field("title", e.target.value)} required maxLength={100} placeholder={draft.kind === "event" ? "Something worth showing up for" : "A name for your people"} /></label>
     <label>Description {draft.kind === "group" && <span>*</span>}<textarea aria-label="Description" rows={4} value={draft.description} onChange={e => field("description", e.target.value)} required={draft.kind === "group"} maxLength={2000} placeholder="What’s the vibe? Who’s it for? Tell us a little more." /></label>

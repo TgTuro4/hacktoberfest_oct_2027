@@ -12,6 +12,7 @@ interface DemoContextValue {
   error: string;
   addItem: (draft: Draft) => boolean;
   decide: (id: string, decision: Decision) => boolean;
+  undoDecision: (id: string) => boolean;
   saveProfile: (profile: Profile) => boolean;
   reset: () => boolean;
 }
@@ -57,6 +58,11 @@ export function DemoProvider({ children }: { children: ReactNode }) {
     decide(id, decision) {
       if (!current.current) return false;
       return commit({ ...current.current, decisions: { ...current.current.decisions, [id]: decision } });
+    },
+    undoDecision(id) {
+      if (!current.current) return false;
+      const { [id]: _removed, ...decisions } = current.current.decisions;
+      return commit({ ...current.current, decisions });
     },
     saveProfile(profile) {
       return current.current ? commit({ ...current.current, profile }) : false;

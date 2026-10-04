@@ -45,6 +45,10 @@ With Snowflake unconfigured, **Load sample announcement → Prefill with AI** re
 
 ## Optional Snowflake text extraction
 
+To align the existing `LIFEDATA.MAIN` tables with the web forms, see
+[the database migration guide](./sql/README.md). This prepares the schema;
+database-backed discovery and publishing are not yet connected.
+
 1. Use an existing Snowflake account, user, and warehouse. Copy `.env.example` to `.env.local`, which is ignored by Git.
 2. Fill in account identifier, username, warehouse, and role. The account is usually `organization-account`; use the identifier from Snowsight, not a URL.
 3. Prefer **key-pair authentication**: register the public key on the user and put the private PKCS#8 PEM key outside the repository. Set its absolute path in `SNOWFLAKE_PRIVATE_KEY_PATH`; optionally set its passphrase. Key authentication takes priority. The alternative password variable works only if the account authentication policy permits it; MFA/SSO requirements can prevent unattended password login.

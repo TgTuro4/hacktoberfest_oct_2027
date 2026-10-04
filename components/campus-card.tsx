@@ -1,72 +1,30 @@
 import type { CampusItem } from "@/lib/types";
-import { Icon, type IconName } from "./icon";
-
-function clockTime(time: string) {
-  const [hour, minute] = time.split(":").map(Number);
-  if (!Number.isFinite(hour) || !Number.isFinite(minute)) return "";
-  return `${hour % 12 || 12}:${String(minute).padStart(2, "0")} ${hour >= 12 ? "PM" : "AM"}`;
-}
+import { Icon } from "./icon";
 
 export function schedule(item: CampusItem) {
   if (item.kind === "group") return item.meetingDetails || "Meeting details to come";
   const day = new Date(`${item.date}T12:00:00`);
   if (Number.isNaN(day.getTime())) return "Date to come";
-  return `${day.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })} · ${clockTime(item.time) || "Time to come"}`;
+  const [hour, minute] = item.time.split(":").map(Number);
+  const time = Number.isFinite(hour) && Number.isFinite(minute) ? `${hour % 12 || 12}:${String(minute).padStart(2, "0")} ${hour >= 12 ? "PM" : "AM"}` : "Time to come";
+  return `${day.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })} · ${time}`;
 }
 
-/** The glanceable version shown on the poster: "Fri, Oct 9 at 7:00 PM". */
-export function shortSchedule(item: CampusItem) {
-  if (item.kind === "group") return item.meetingDetails || "Meets regularly";
-  const day = new Date(`${item.date}T12:00:00`);
-  if (Number.isNaN(day.getTime())) return "Date to come";
-  const date = day.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
-  const time = clockTime(item.time);
-  return time ? `${date} at ${time}` : date;
-}
-
-const glyphs: [RegExp, IconName][] = [
-  [/board game|game night|catan/i, "dice"],
-  [/coffee|café|cafe/i, "coffee"],
-  [/food|cook|chef|culture/i, "food"],
-  [/art|draw|creative|sketch/i, "palette"],
-  [/hik|trail|adventure|scenic/i, "mountain"],
-  [/yoga|fitness|wellness/i, "sun"],
-  [/tech|computer|hack|code|cs\b/i, "code"],
-];
-
-export function glyphFor(item: CampusItem): IconName {
-  const text = `${item.tags.join(" ")} ${item.title}`;
-  return glyphs.find(([pattern]) => pattern.test(text))?.[1] ?? "sparkles";
-}
-
-function PosterArt({ item }: { item: CampusItem }) {
-  return <div className="poster-art" aria-hidden="true">
-    <div className="poster-bend" />
-    <Icon name={glyphFor(item)} className="poster-glyph" size={240} strokeWidth={1.15} />
-  </div>;
-}
-
-/** `onInfo` adds the little "i" button in the corner (used on the swipe deck to jump to the full details). */
-export function CampusCard({ item, compact = false, onInfo }: { item: CampusItem; compact?: boolean; onInfo?: () => void }) {
-  return <article className={`poster tone-${item.color % 4} ${compact ? "poster-compact" : ""}`} aria-label={`${item.kind}: ${item.title}`}>
-    <PosterArt item={item} />
-    <div className="poster-top">
-      <span className="poster-chip">{item.kind === "group" ? "Group" : "Event"}</span>
-      {onInfo && <button className="poster-info-btn" aria-label={`More about ${item.title}`} onPointerDown={event => event.stopPropagation()} onClick={onInfo}><Icon name="info" size={20} strokeWidth={2.8} /></button>}
+export function CampusCard({ item, compact = false }: { item: CampusItem; compact?: boolean }) {
+  const artIcon = item.tags.some(t => /outdoor|wellness/i.test(t)) ? "leaf" : item.tags.some(t => /tech|computer|hack/i.test(t)) ? "code" : "sparkles";
+  return <article className={`campus-card color-${item.color % 4} ${compact ? "compact-card" : ""}`} aria-label={`${item.kind}: ${item.title}`}>
+    <div className="card-art">
+      <div className="art-grid" /><div className="art-orbit orbit-one" /><div className="art-orbit orbit-two" />
+      <span className="art-spark spark-one" aria-hidden="true">✳</span><span className="art-spark spark-two" aria-hidden="true">✦</span>
+      <div className="art-center"><Icon name={artIcon} size={58} /></div>
+      <span className="art-note" aria-hidden="true">{item.kind === "group" ? "your kind of people" : "make a little time"}</span>
+      <span className="kind-label">{item.kind === "group" ? "Campus group" : "Campus event"}</span>
+      {item.demo && <span className="demo-badge">DEMO DATA</span>}
     </div>
-    <div className="poster-info">
-      <h2>{item.title}</h2>
-      <p><Icon name="pin" size={16} /><span>{item.location || "Location to come"}</span></p>
-      {!compact && <p><Icon name="clock" size={16} /><span>{shortSchedule(item)}</span></p>}
-      {!compact && item.tags.length > 0 && <div className="poster-tags">{item.tags.slice(0, 3).map(tag => <span key={tag}>{tag}</span>)}</div>}
+    <div className="card-body">
+      <h2>{item.title}</h2><p className="card-description">{item.description}</p>
+      <div className="tags">{item.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
+      <div className="card-details"><p><Icon name="pin" size={18} /><span>{item.location || "Location to come"}</span></p><p><Icon name="clock" size={18} /><span>{schedule(item)}{item.kind === "event" && <small>Campus time · America/New_York</small>}</span></p></div>
     </div>
   </article>;
-}
-
-/** Tiny title-only poster used for the sidebar picks grid. */
-export function MiniPoster({ item }: { item: CampusItem }) {
-  return <span className={`poster poster-mini tone-${item.color % 4}`}>
-    <PosterArt item={item} />
-    <span className="poster-mini-title">{item.title}</span>
-  </span>;
 }

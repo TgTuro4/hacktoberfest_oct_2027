@@ -8,7 +8,7 @@ export function readDemo(storage: Pick<Storage, "getItem" | "setItem">): DemoSta
   const stored = storage.getItem(STORAGE_KEY);
   if (stored !== null) {
     const value: unknown = JSON.parse(stored);
-    if (!isDemoState(value)) throw new Error("Saved SocialShell data is unreadable. Reset the demo to start fresh.");
+    if (!isDemoState(value)) throw new Error("Saved TerpLink data is unreadable. Reset the demo to start fresh.");
     return value;
   }
   const initial = freshDemo();

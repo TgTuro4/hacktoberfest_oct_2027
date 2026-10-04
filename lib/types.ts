@@ -17,6 +17,8 @@ export interface CampusItem extends Draft {
   demo: boolean;
   color: number;
   createdAt: string;
+  isActive?: boolean;
+  startsAt?: string;
 }
 
 export interface Profile {

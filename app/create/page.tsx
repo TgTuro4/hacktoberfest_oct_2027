@@ -66,19 +66,19 @@ export default function CreatePage() {
     if (file.size > 3 * 1024 * 1024) { setImageError("That image is too large. The limit is 3 MB."); event.target.value = ""; return; }
     setImage(URL.createObjectURL(file));
   }
-  function publish(draft: Draft) {
-    if (!addItem(draft)) return false;
+  async function publish(draft: Draft) {
+    if (!await addItem(draft)) return false;
     setSuccess(`“${draft.title.trim()}” is published! Find it in Discover.`);
     if (selected !== null) setPublished(list => [...list, selected]);
     setSelected(null); setInitial(emptyDraft(kind)); setFormVersion(v => v + 1);
     return true;
   }
   return <section>
-    <div className="page-heading"><h1>Make room for connection.</h1><p>A study crew. A game night. A big idea. It starts with you.</p></div>
-    {success && <div className="notice success" role="status"><Icon name="check" size={22} /><div>{success} <Link href="/discover" className="text-link">View in Discover</Link>{result && published.length < result.drafts.length && <p>Select another draft below to create it next.</p>}</div></div>}
+    <div className="page-heading"><p className="eyebrow">START SOMETHING GOOD</p><h1>Make room for <em>connection.</em></h1><p>A study crew. A game night. A big idea. It starts with you.</p></div>
+    {success && <div className="notice success" role="status"><Icon name="check" size={22} /><div>{success} <Link href="/discover" className="text-link">View in Discover →</Link>{result && published.length < result.drafts.length && <p>Select another draft below to create it next.</p>}</div></div>}
     <div className="creation-layout">
       <aside className="creation-tools">
-        <div className="panel ai-panel"><div className="ai-title"><span className="little-icon"><Icon name="sparkles" /></span><span className="step-label">A little head start</span></div><h2>From announcement<br />to almost ready.</h2><p>Paste a message to prefill your details, then give them a once-over.</p>
+        <div className="panel ai-panel"><div className="ai-title"><span className="little-icon"><Icon name="sparkles" /></span><span className="step-label">A LITTLE HEAD START</span></div><h2>From announcement<br />to almost ready.</h2><p>Paste a message to prefill your details, then give them a once-over.</p>
           <label className="announcement-label">Announcement<textarea aria-label="Announcement" value={text} onChange={e => changeText(e.target.value)} rows={7} maxLength={MAX_ANNOUNCEMENT} placeholder="Hey Terps! We’re hosting a game night at Stamp…" /><small>{text.length.toLocaleString()} / {MAX_ANNOUNCEMENT.toLocaleString()} characters</small></label>
           <button className="button dark full-width" onClick={prefill} disabled={busy || !text.trim()}><Icon name="sparkles" size={18} />{busy ? "Preparing your drafts…" : "Prefill with AI"}</button>
           <button className="sample-button" disabled={busy} onClick={() => changeText(SAMPLE_ANNOUNCEMENT)}>Load sample announcement <Icon name="arrow" size={16} /></button>

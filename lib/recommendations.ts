@@ -35,7 +35,7 @@ export function searchFilter(input: SearchInput, campus: string, now: Date) {
 }
 
 export function decodeSearchResults(value: unknown, input: SearchInput, campus: string, now: Date, includeUnavailable = false): CampusItem[] {
-  if (!object(value) || !Array.isArray(value.results) || value.results.length > 1000) throw new Error("Invalid search response.");
+  if (!object(value) || !Array.isArray(value.results) || value.results.length > 5000) throw new Error("Invalid search response.");
   const seen = new Set(input.excludedIds);
   const items: CampusItem[] = [];
   for (const raw of value.results) {
@@ -47,7 +47,7 @@ export function decodeSearchResults(value: unknown, input: SearchInput, campus: 
     const rawId = str("ITEM_ID", 180), id = `snowflake:${rawId}`;
     const kind = str("ITEM_TYPE", 10);
     if (!rawId || (kind !== "event" && kind !== "group")) throw new Error("Invalid card identity.");
-    const title = str("TITLE", 100), description = str("DESCRIPTION", 2000), rowCampus = str("CAMPUS", 200);
+    const title = str("TITLE", 500), description = str("DESCRIPTION", 20000), rowCampus = str("CAMPUS", 200);
     if (!title) throw new Error("Missing card title.");
     if (rowCampus !== campus || (input.kind !== "all" && kind !== input.kind) || (!includeUnavailable && Number(raw.IS_ACTIVE) !== 1) || seen.has(id)) continue;
     let date = "", time = "";
@@ -61,9 +61,12 @@ export function decodeSearchResults(value: unknown, input: SearchInput, campus: 
       time = `${part("hour")}:${part("minute")}`;
     }
     const tags = [...new Set(str("TAGS", 1000).split(",").map(t => t.trim()).filter(Boolean))].slice(0, 8).map(t => t.slice(0, 30));
+    const sourceMatch = /^Official listing: (https:\/\/[^\s]+)\n\n/.exec(description);
+    const sourceUrl = sourceMatch?.[1];
+    const cardDescription = sourceMatch ? description.slice(sourceMatch[0].length) : description;
     seen.add(id);
     // Dates are shown in the same campus timezone used by the existing cards.
-    items.push({ id, kind, title, description, tags, date, time, location: str("LOCATION", 200), meetingDetails: str("MEETING_DETAILS", 300), demo: raw.IS_DEMO === true || raw.IS_DEMO === "true", color: items.length % 4, createdAt: typeof raw.CREATED_AT === "string" ? raw.CREATED_AT : now.toISOString(), isActive: Number(raw.IS_ACTIVE) === 1, startsAt: typeof raw.STARTS_AT === "string" ? raw.STARTS_AT : undefined });
+    items.push({ id, kind, title, description: cardDescription.length > 2000 ? cardDescription.slice(0, 1999) + "…" : cardDescription, sourceUrl, allDay: cardDescription.includes("All-day event; check the official listing for attendance hours."), tags, date, time, location: str("LOCATION", 200), meetingDetails: str("MEETING_DETAILS", 300), demo: raw.IS_DEMO === true || raw.IS_DEMO === "true", color: items.length % 4, createdAt: typeof raw.CREATED_AT === "string" ? raw.CREATED_AT : now.toISOString(), isActive: Number(raw.IS_ACTIVE) === 1, startsAt: typeof raw.STARTS_AT === "string" ? raw.STARTS_AT : undefined });
   }
   return items;
 }

@@ -5,9 +5,9 @@ import { useDemo } from "@/components/demo-provider";
 import { Icon } from "@/components/icon";
 
 export default function HomePage() {
-  const { state } = useDemo();
+  const { state, mode } = useDemo();
   if (!state) return null;
-  const available = state.items.filter(item => !state.decisions[item.id]);
+  const available = state.items.filter(item => !state.decisions[item.id] && (mode !== "snowflake" || !item.demo) && item.isActive !== false && (!item.startsAt || new Date(item.startsAt).getTime() >= Date.now()));
   const saved = Object.values(state.decisions).filter(d => d === "interested").length;
   const firstName = state.profile.name.trim().split(/\s+/)[0];
   return (

@@ -7,7 +7,7 @@ export function schedule(item: CampusItem) {
   if (Number.isNaN(day.getTime())) return "Date to come";
   const [hour, minute] = item.time.split(":").map(Number);
   const time = Number.isFinite(hour) && Number.isFinite(minute) ? `${hour % 12 || 12}:${String(minute).padStart(2, "0")} ${hour >= 12 ? "PM" : "AM"}` : "Time to come";
-  return `${day.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })} · ${time}`;
+  return `${day.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })} · ${item.allDay ? "All day" : time}`;
 }
 
 export function CampusCard({ item, compact = false }: { item: CampusItem; compact?: boolean }) {
@@ -25,6 +25,7 @@ export function CampusCard({ item, compact = false }: { item: CampusItem; compac
       <h2>{item.title}</h2><p className="card-description">{item.description}</p>
       <div className="tags">{item.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
       <div className="card-details"><p><Icon name="pin" size={18} /><span>{item.location || "Location to come"}</span></p><p><Icon name="clock" size={18} /><span>{schedule(item)}{item.kind === "event" && <small>Campus time · America/New_York</small>}</span></p></div>
+      {item.sourceUrl && <a className="text-link" href={item.sourceUrl} target="_blank" rel="noopener noreferrer" onPointerDown={event => event.stopPropagation()} onClick={event => event.stopPropagation()}>View official event ↗</a>}
     </div>
   </article>;
 }

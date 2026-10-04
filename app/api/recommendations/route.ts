@@ -45,6 +45,7 @@ export async function POST(request: Request) {
     } else items = await recommend(input);
     return json({ source: "snowflake", items });
   } catch (error) {
+    console.warn("TerpLink AI request failed:", error instanceof Error ? error.message.slice(0, 160) : "Unknown failure");
     if (error instanceof SearchServiceError && error.code === "unconfigured") return json({ error: "AI discovery is not connected yet. Your team needs to configure the server’s Snowflake search access token. You can still explore the local cards." }, 503);
     if (error instanceof SearchServiceError && error.code === "timeout") return json({ error: "AI search took too long. Try again." }, 504);
     return json({ error: "AI search is unavailable. Ask your team to check the search service, server credentials and permissions." }, 502);

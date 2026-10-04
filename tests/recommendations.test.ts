@@ -57,3 +57,11 @@ test("merging refreshes existing remote cards while keeping local creations and 
   assert.equal(merged[0].title, "My club");
   assert.equal(merged[1].title, "Updated");
 });
+
+test("real listings retain long titles and source links while bounding card copy", () => {
+ const url="https://calendar.umd.edu/events/test-event";
+ const title="A".repeat(161);
+ const description="Official listing: "+url+"\n\n"+"B".repeat(5356);
+ const item=decodeSearchResults({results:[card({TITLE:title,DESCRIPTION:description,IS_DEMO:false})]},parseSearchInput(request()),"UMD",now)[0];
+ assert.equal(item.title,title);assert.equal(item.sourceUrl,url);assert.equal(item.description.length,2000);assert.equal(item.demo,false);
+});

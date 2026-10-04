@@ -6,3 +6,6 @@ node_modules/
 playwright-report/
 test-results/
 .DS_Store
+
+# Local event snapshots (public listings may contain contact information)
+data/umd-events/

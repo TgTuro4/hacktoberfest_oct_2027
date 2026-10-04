@@ -52,7 +52,7 @@ export default function DiscoverPage() {
 
   const rankedCards = rankedIds === null ? state.items : rankedIds.map(id => state.items.find(item => item.id === id)).filter((item): item is CampusItem => Boolean(item));
   const available = rankedCards.filter(item =>
-    !state.decisions[item.id] && item.isActive !== false && (!item.startsAt || new Date(item.startsAt).getTime() >= Date.now()) && (filter === "all" || item.kind === filter)
+    !state.decisions[item.id] && (mode !== "snowflake" || !item.demo) && item.isActive !== false && (!item.startsAt || new Date(item.startsAt).getTime() >= Date.now()) && (filter === "all" || item.kind === filter)
   );
   const current = available[0];
 

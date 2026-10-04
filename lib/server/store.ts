@@ -53,7 +53,7 @@ const catalogSelect=()=>`SELECT ITEM_ID, ITEM_TYPE, TITLE, DESCRIPTION, TAGS, CA
 export async function readState(q:Query,userId:string):Promise<DemoState> {
   const profile=await readProfile(q,userId);
   const history=await q(`SELECT ITEM_ID,ACTION FROM ${P()}.SWIPES WHERE USER_ID=?`,[userId]);
-  const rows=await q(`${catalogSelect()} WHERE CAMPUS=? AND (IS_ACTIVE=1 OR ITEM_ID IN (SELECT ITEM_ID FROM ${P()}.SWIPES WHERE USER_ID=?)) ORDER BY CREATED_AT DESC NULLS LAST, ITEM_ID LIMIT 1000`,[campus(),userId]);
+  const rows=await q(`${catalogSelect()} WHERE CAMPUS=? AND ((IS_ACTIVE=1 AND COALESCE(IS_DEMO,FALSE)=FALSE) OR ITEM_ID IN (SELECT ITEM_ID FROM ${P()}.SWIPES WHERE USER_ID=?)) ORDER BY CASE WHEN ITEM_TYPE='event' AND STARTS_AT>=CURRENT_TIMESTAMP() THEN 0 WHEN ITEM_TYPE='group' THEN 1 ELSE 2 END, STARTS_AT ASC NULLS LAST, CREATED_AT DESC NULLS LAST, ITEM_ID LIMIT 5000`,[campus(),userId]);
   const items=decodeSearchResults({results:rows},{query:"",kind:"all",excludedIds:[]},campus(),new Date(),true);
   const decisions:Record<string,Decision>={};
   for(const row of history)if(row.ACTION==="interested"||row.ACTION==="pass")decisions[`snowflake:${row.ITEM_ID}`]=row.ACTION;
@@ -91,7 +91,7 @@ export async function resetUser(q:Query,userId:string) {
 export async function recheckResults(q:Query, items:CampusItem[], userId:string):Promise<CampusItem[]> {
   if(!items.length)return [];
   const rawIds=items.map(item=> {const p=catalogIdentity(item.id);return `${p.kind}:${p.numericId}`;});
-  const rows=await q(`${catalogSelect()} WHERE CAMPUS=? AND ITEM_ID IN (${rawIds.map(()=>"?").join(",")}) AND ITEM_ID NOT IN (SELECT ITEM_ID FROM ${P()}.SWIPES WHERE USER_ID=?)`,[campus(),...rawIds,userId]);
+  const rows=await q(`${catalogSelect()} WHERE CAMPUS=? AND COALESCE(IS_DEMO,FALSE)=FALSE AND ITEM_ID IN (${rawIds.map(()=>"?").join(",")}) AND ITEM_ID NOT IN (SELECT ITEM_ID FROM ${P()}.SWIPES WHERE USER_ID=?)`,[campus(),...rawIds,userId]);
   const current=new Map(decodeSearchResults({results:rows},{query:"",kind:"all",excludedIds:[]},campus(),new Date()).map(item=>[item.id,item]));
   return items.map(item=>current.get(item.id)).filter((item):item is CampusItem=>Boolean(item));
 }

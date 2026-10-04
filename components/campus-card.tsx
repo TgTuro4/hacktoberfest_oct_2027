@@ -43,12 +43,17 @@ function PosterArt({ item }: { item: CampusItem }) {
   return <div className="poster-art" aria-hidden="true">
     <div className="poster-bend" />
     <Icon name={glyphFor(item)} className="poster-glyph" size={240} strokeWidth={1.15} />
+    {/* Flyers have text, so show the whole image over a blurred copy of itself. A broken link hides both and the art shows through. */}
+    {item.image && <>
+      <img className="poster-photo-bg" src={item.image} alt="" loading="lazy" draggable={false} referrerPolicy="no-referrer" onError={event => { event.currentTarget.style.display = "none"; }} />
+      <img className="poster-photo" src={item.image} alt="" loading="lazy" draggable={false} referrerPolicy="no-referrer" onError={event => { event.currentTarget.style.display = "none"; }} />
+    </>}
   </div>;
 }
 
 /** `onInfo` adds the little "i" button in the corner (used on the swipe deck to jump to the full details). */
 export function CampusCard({ item, compact = false, onInfo }: { item: CampusItem; compact?: boolean; onInfo?: () => void }) {
-  return <article className={`poster tone-${item.color % 4} ${compact ? "poster-compact" : ""}`} aria-label={`${item.kind}: ${item.title}`}>
+  return <article className={`poster tone-${item.color % 4} ${compact ? "poster-compact" : ""} ${item.image ? "has-photo" : ""}`} aria-label={`${item.kind}: ${item.title}`}>
     <PosterArt item={item} />
     <div className="poster-top">
       <span className="poster-chip">{item.kind === "group" ? "Group" : "Event"}</span>

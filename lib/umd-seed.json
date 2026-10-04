@@ -1,0 +1,1047 @@
+[
+ {
+  "id": "umd-a84d4dec9ffd",
+  "kind": "event",
+  "title": "WIE - Intro to Python",
+  "description": "Join the Women in Engineering (WIE) Program at UMD, which supports and empowers women pursuing engineering. WIE offers resources, workshops, and opportunities to help students thrive in STEM. This beginner-friendly session introduces the fundamentals of Python through hands-on exercises. By the end, you’ll understand key coding concepts and create a Rock-Paper-Scissors game to put your skills into practice. ATTENDEES ARE ENCOURAGED TO BRING THEIR OWN LAPTOP, and a mouse is helpful! SEATS ARE LIMITED, register early! In partnership with Terrapin Works",
+  "tags": [
+   "Technology",
+   "Career",
+   "Workshop"
+  ],
+  "location": "E.A. Fernandez IDEA Factory | ALEx Garage, 1st Floor Room #1113",
+  "date": "2026-10-05",
+  "time": "17:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 0,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/49ef678e-5222-46a8-8d2e-2c934dbb1d2cd4bce7c5-af5d-413a-b635-edf2d0dcfbe4.png?preset=large-w"
+ },
+ {
+  "id": "umd-c4fcbbc841fd",
+  "kind": "event",
+  "title": "Internship Panel",
+  "description": "UXTerps on October 5th at 5:30 p.m.for an interactive Internship Panel event! Connect with peers, professionals, and alumni and learn from their experiences in UX, HCI, and related fields. Panelists will share how they found their opportunities, what skills they learned throughout their experience, and advice for building strong portfolios and preparing for interviews. This is a chance for students to ask questions, gain insights, and network with others interested in pursuing HCI internships.",
+  "tags": [
+   "Career",
+   "Lecture"
+  ],
+  "location": "Hornbake Library",
+  "date": "2026-10-05",
+  "time": "17:30",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 1,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/0425dcf5-247e-41a0-9f5e-e2ad224562dca5d35ac1-1e8e-4fff-aaae-478927108526.png?preset=large-w"
+ },
+ {
+  "id": "umd-0ea9ef4b5ae4",
+  "kind": "event",
+  "title": "2026 INFO College Human Library",
+  "description": "Please join the University Career Center @ INFO and the INFO College's Office of Opportunity, Access, Community Engagement, and Support (OACES) for an evening of networking with alumni and industry partners. At the Human Library, you'll connect with our volunteer “books” to learn more about career pathways of interest and how your degree is preparing you for the future. The basic idea of a human library began in 2000 in Copenhagen. It was designed to facilitate human connection and conversation as a way of overcoming differences.",
+  "tags": [
+   "Technology",
+   "Career",
+   "Research"
+  ],
+  "location": "Hornbake Library, INFO Commons - 0300 HBK",
+  "date": "2026-10-07",
+  "time": "17:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 2,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/f22f4756-d234-44ff-85d6-626fe7619063c2896bab-61ef-416e-aec9-4964b400f43b.png?preset=large-w"
+ },
+ {
+  "id": "umd-org-engineers-without-borders",
+  "kind": "group",
+  "title": "Engineers Without Borders",
+  "description": "A UMD student organization with 49 events coming up, including “Ecuador Project Meeting” and “Rwanda Project Meeting”.",
+  "tags": [
+   "Technology",
+   "Volunteering",
+   "Workshop"
+  ],
+  "location": "William E. Kirwan Hall (MTH 0104)",
+  "date": "",
+  "time": "",
+  "meetingDetails": "Next event: Oct 5 · 5:00 PM",
+  "demo": false,
+  "color": 3,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/35086ce5-d553-455e-b253-9e7342a3b2ea2d79f17b-9b5b-4666-a049-806b32b531b3.png?preset=large-w"
+ },
+ {
+  "id": "umd-8ec0c35d61a6",
+  "kind": "event",
+  "title": "Intro to CAD Using Autodesk Fusion 360",
+  "description": "Do you want to design your own 3D models? Join us in the John and Stella Graves Makerspace as we collaborate with Terrapin Works to teach you the basics of 3D modeling in Fusion 360! By the end of this workshop, attendees will understand the utility of Fusion 360 and how to navigate the software to use some of the most commonly accessed functions when making a 3D model. Attendees will also learn how to make simple 2D sketches, and how to turn these sketches into 3D models. Together, participants will model a planter in Fusion 360 and take home the model they create!",
+  "tags": [
+   "Technology"
+  ],
+  "location": "STEM Library",
+  "date": "2026-10-07",
+  "time": "17:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 0,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/45f771d1-0221-466e-be77-ed12c12e469f1225aec9-33f5-468c-9bab-63b3a631cc7f.png?preset=large-w"
+ },
+ {
+  "id": "umd-c34133048a8b",
+  "kind": "event",
+  "title": "Engineers Without Borders Water Workshop",
+  "description": "This is a workshop for members of Engineers Without Borders to gain hands on experience learning about water testing and treatment.",
+  "tags": [
+   "Workshop"
+  ],
+  "location": "School of Public Health (0302)",
+  "date": "2026-10-07",
+  "time": "17:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 1,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/0b9d7f6a-bfd8-4309-814c-75fc015ded3d0ecbe81b-0a49-4174-bc67-85685836eab3.png?preset=large-w"
+ },
+ {
+  "id": "umd-org-drone-club",
+  "kind": "group",
+  "title": "Drone Club",
+  "description": "A UMD student organization with 5 events coming up, including “General Board Meeting”.",
+  "tags": [
+   "Technology"
+  ],
+  "location": "Symons 0200",
+  "date": "",
+  "time": "",
+  "meetingDetails": "Next event: Oct 9 · 5:00 PM",
+  "demo": false,
+  "color": 2,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/c0fa41fb-d49d-44ba-9db5-8e747cdf3971f770e7aa-1db5-41a3-a14d-3ddb3e2ae233.png?preset=large-w"
+ },
+ {
+  "id": "umd-edb6bea505f7",
+  "kind": "event",
+  "title": "IES: Intro to Motors and Servos",
+  "description": "Join Terrapin Works for Intro to Motors and Servos from 5:00 to 6:30 pm! In this workshop, you’ll discover how motors and servos work and how to control them using sensors. You’ll gain hands-on experience by building simple circuits that bring your projects to life. This workshop is perfect for beginners looking to explore the basics of robotics and circuit design, and ENES100 students who need assistance in the project build phase.",
+  "tags": [
+   "Career",
+   "Workshop"
+  ],
+  "location": "E.A. Fernandez IDEA Factory | ALEx Garage, 1st Floor Room #1113",
+  "date": "2026-10-08",
+  "time": "17:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 3,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/c022f49d-1124-40af-9684-a58afd9370e1b488c9f6-2eb6-4e43-b8f4-3a1d090e747b.png?preset=large-w"
+ },
+ {
+  "id": "umd-org-business-information-technology-society",
+  "kind": "group",
+  "title": "Business & Information Technology Society",
+  "description": "A UMD student organization with 1 event coming up, including “GBM #4”.",
+  "tags": [
+   "Career",
+   "Workshop"
+  ],
+  "location": "VMH1335",
+  "date": "",
+  "time": "",
+  "meetingDetails": "Next event: Oct 5 · 5:00 PM",
+  "demo": false,
+  "color": 0,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/1a9ec695-459e-4474-9486-9999664d011f31bbb813-6884-4904-8486-c8bd762e196e.png?preset=large-w"
+ },
+ {
+  "id": "umd-d3d3659de092",
+  "kind": "event",
+  "title": "Redesigning Your Programming Assignments for AI",
+  "description": "Teaching and Learning Transformation Center workshop for instructors: What does AI mean for your programming assignments (computer science, statistics, data analytics, etc.)? When should you force students to fully understand the fundamentals? When should they learn to leverage new tools and explore new workflows? In this interactive session, we’ll share examples of redesigned assignments and guide you in brainstorming practical ways to adapt your own. You’ll have time to share ideas and experiences with colleagues teaching similar types of content as well.",
+  "tags": [
+   "Technology"
+  ],
+  "location": "Edward St. John Learning and Teaching Center",
+  "date": "2026-10-28",
+  "time": "14:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 1,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/Fall-2026-Campus-Calendar-Workshop-Images-19-1.jpeg?w=1920&h=1080&auto=compress%2Cformat&fit=crop&dm=1787321930&s=e94311bc789c99865c215efdee2398cd"
+ },
+ {
+  "id": "umd-d6edd3bac595",
+  "kind": "event",
+  "title": "AI + Architecture Summit",
+  "description": "Please note the AI Summit will be held on October 28 and October 30. This two-day event will bring together experts from architectural firms, universities, and industry to explore the transformative role of artificial intelligence in architecture and design. Wednesday, October 28 4 - 5:20 p.m. | INDUSTRY PANEL DISCUSSION The AI-Enabled Practice: How Will Architecture Change in the Next Five Years? Open to the Public Friday, October 30 12 - 2 p.m. | INDUSTRY X ACADEMIA WORKSHOP Collaborative AI Design Workshop Architecture Firms + Faculty + Students Open to Architecture Students 2 - 4 p.m.",
+  "tags": [
+   "Technology"
+  ],
+  "location": "Architecture Building",
+  "date": "2026-10-28",
+  "time": "16:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 2,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/Ai_Summit_Moon_person.jpg?w=1439&h=720&auto=compress%2Cformat&fit=crop&dm=1788894715&s=3e31dd25b2d4b55a8df8d4948ab42064"
+ },
+ {
+  "id": "umd-1c44e7144ca3",
+  "kind": "event",
+  "title": "Intro to Python: Rock, Paper, Scissors, Shoot!",
+  "description": "Join us in the John and Stella Graves Makerspace as we collaborate with Terrapin Works to teach you one of the most versatile programming languages, designed specifically for beginners. In this hands-on workshop, you'll gain practical coding experience by building your own Paper Rock Scissors game. Through interactive exercises, you'll explore essential programming concepts and watch your code come to life in a fun, engaging project. Bring your own laptop (highly recommended) to get hands-on experience with this platform.",
+  "tags": [
+   "Technology"
+  ],
+  "location": "STEM Library",
+  "date": "2026-11-04",
+  "time": "17:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 3,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/5e520e34-d731-42db-b774-c23e18b51c0abe36354f-a58b-49c9-a7cf-a7285b6ba626.png?preset=large-w"
+ },
+ {
+  "id": "umd-org-uxterps",
+  "kind": "group",
+  "title": "UXTerps",
+  "description": "A UMD student organization with 1 event coming up, including “Internship Panel”.",
+  "tags": [
+   "Career",
+   "Lecture"
+  ],
+  "location": "Hornbake Library",
+  "date": "",
+  "time": "",
+  "meetingDetails": "Next event: Oct 5 · 5:30 PM",
+  "demo": false,
+  "color": 0,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/0425dcf5-247e-41a0-9f5e-e2ad224562dca5d35ac1-1e8e-4fff-aaae-478927108526.png?preset=large-w"
+ },
+ {
+  "id": "umd-9782c8376690",
+  "kind": "event",
+  "title": "Counterpoint: Rhapsody in Blue ft. Conrad Tao & Caleb Teicher",
+  "description": "Counterpoint is a one-of-a-kind project—part dance and part piano recital, with a dose of theatrics—that demands to be experienced live! The collaboration between great American composer and pianist Conrad Tao and outstanding tap dancer Caleb Teicher is a uniquely fresh and deeply vital exploration of percussion's transcendent joys of sound and impact. Back at The Clarice by popular demand, the duo uncover fresh perspectives with exciting harmonic, rhythmic and theatrical traditions linking each other's practices across disciplines and eras.",
+  "tags": [
+   "Concert",
+   "Music",
+   "Dance"
+  ],
+  "location": "Gildenhorn Recital Hall, The Clarice Smith Performing Arts Center",
+  "date": "2026-10-04",
+  "time": "15:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 1,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://theclarice.umd.edu/sites/default/files/2026-06/Counterpoint.png"
+ },
+ {
+  "id": "umd-b185e139444d",
+  "kind": "event",
+  "title": "Midnight Breakfast BAD",
+  "description": "Join Midnight Breakfast for their first Big Ass Donut (BAD) Cold Read Cabaret of the semester. Participants will don an inflatable donut, choose from a selection of provided miscellaneous monologues and 2-person scenes, and perform the pieces full out! Midnight Breakfast aims to develop a culture of playwriting among University of Maryland students with a focus on new play development in all of its capacities.",
+  "tags": [
+   "Theater",
+   "Dance",
+   "Arts"
+  ],
+  "location": "Cafritz Foundation Theatre, The Clarice Smith Performing Arts Center",
+  "date": "2026-10-04",
+  "time": "20:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 2,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://theclarice.umd.edu/sites/default/files/2026-09/Untitled%20design%20%288%29%20%281%29.png"
+ },
+ {
+  "id": "umd-d71ba4478ef7",
+  "kind": "event",
+  "title": "Supporting Neurodiverse Learners",
+  "description": "Teaching and Learning Transformation Center workshop for instructors: This workshop will assist you in gaining valuable insights about neurodivergent learners and taking a strengths-based approach to teaching. You’ll leave this workshop with practical techniques to enhance your teaching practice and foster a more inclusive classroom. For more information about the TLTC, visit tltc.umd.edu. To see other upcoming TLTC workshops, visit tltc.umd.edu/instructors/workshops.",
+  "tags": [
+   "Academic"
+  ],
+  "location": "Edward St. John Learning and Teaching Center",
+  "date": "2026-10-05",
+  "time": "14:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 3,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/Fall-2026-Campus-Calendar-Workshop-Images-24-1.jpeg?w=1920&h=1080&auto=compress%2Cformat&fit=crop&dm=1788461023&s=44cb45610b7f9799601c4d5e781f6f77"
+ },
+ {
+  "id": "umd-cca24a7ae351",
+  "kind": "event",
+  "title": "Thriving in Graduate School",
+  "description": "You've been in graduate school for a few weeks now -- you have questions! Or maybe you are an undergraduate thinking about graduate school in the future. Join The Graduate School to learn how to thrive while advancing your knowledge. We'll share resources on creating a school-life balance, networking, wellbeing, and research, and you'll have a chance to ask advanced graduate students for great advice! Feel free to bring a friend or colleague, all are welcome. Undergraduates considering graduate school are welcome too. Supported by the Pepsi Enhancement Fund.",
+  "tags": [
+   "Career",
+   "Research",
+   "Food"
+  ],
+  "location": "Grand Ballroom Lounge -- Stamp Student Union",
+  "date": "2026-10-05",
+  "time": "15:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 0,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/9eea7907-6261-4ed5-a02b-3534a410e7a16382986c-ece5-45df-9751-a56335d53cb3.png?preset=large-w"
+ },
+ {
+  "id": "umd-org-swing-dance-club-at-umd",
+  "kind": "group",
+  "title": "Swing Dance Club at UMD",
+  "description": "A UMD student organization with 22 events coming up, including “Free West Coast Swing Dance Lessons (Beginner)” and “West Coast Swing Dance Practice Space”.",
+  "tags": [
+   "Dance",
+   "Social",
+   "Cultural"
+  ],
+  "location": "Stamp Student Union: Prince George's Room 1211",
+  "date": "",
+  "time": "",
+  "meetingDetails": "Next event: Oct 5 · 7:00 PM",
+  "demo": false,
+  "color": 1,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/1eb07f62-f2c3-4522-827b-065cb4b465a24103fb2b-5c65-4ca3-ae83-3351b73aa070.png?preset=large-w"
+ },
+ {
+  "id": "umd-5a0fbab9175e",
+  "kind": "event",
+  "title": "Mondays at the Community Learning Garden",
+  "description": "Join us in the Community Learning Garden for fresh air, good vibes, & garden therapy No experience needed — Gloves and tools provided SSL Hours are available for high schoolers Register here: https://docs.google.com/spreadsheets/d/13ntMxkSQ16rghROvjuMfTqx9JvP7OtAHDzlFmAnviP8/edit?usp=sharing",
+  "tags": [
+   "Outdoors"
+  ],
+  "location": "Between Eppley Recreation Center & the School of Public Health",
+  "date": "2026-10-05",
+  "time": "15:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 2,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/0b5d7aaa-77ff-4ec6-a3d2-4e9320cc7c3272e4a4f3-d6a4-4677-bfb9-32c055a2ba0c.png?preset=large-w"
+ },
+ {
+  "id": "umd-fb3d2ec10ade",
+  "kind": "event",
+  "title": "Language Chats at the Language House",
+  "description": "Everyone is welcome to practice, improve, share, or maintain their language skills in a casual setting with drinks and snacks. The program meets every Monday from 4 to 5:30 p.m. at St. Mary’s Hall, home to the Language House Living-Learning Program, and is open to members of the campus community interested in practicing or sharing any language they are learning or have learned. Regularly available language tables include Arabic, Chinese, French, German, Hebrew, Italian, Japanese, Korean, Persian, Portuguese, Russian and Spanish.",
+  "tags": [
+   "Food"
+  ],
+  "location": "St. Mary's Hall",
+  "date": "2026-10-05",
+  "time": "16:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 3,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/Chats-F26-half-format.jpg?w=1010&h=766&auto=compress%2Cformat&fit=crop&dm=1787855368&s=36e506873892f58413862706c14887f8"
+ },
+ {
+  "id": "umd-8e93a543e9c5",
+  "kind": "event",
+  "title": "SEE Presents: Student Comedy Competition",
+  "description": "Want to win a meet & greet with Sal Vulcano or Josh Johnson, a mini-fridge, pokemon cards or a t-shirt? Join us October 5th in the Baltimore Room in the STAMP Student Union for a student comedy competition! This event is for UMD students to showcase their comedic wit, wordplay and humor to others who are there for a quick laugh. This event will be held from 6-7:30pm, having 10 comedians total, each given 5 minutes to show what funny stories, hot takes or other comedic skills they have to the test.",
+  "tags": [
+   "Comedy",
+   "Arts",
+   "Social"
+  ],
+  "location": "Baltimore Room",
+  "date": "2026-10-05",
+  "time": "18:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 0,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/188c5b0e-0f47-45af-8634-998a84e4ecd550a3d1c1-5c98-434f-bcd7-3458f39f122e.png?preset=large-w"
+ },
+ {
+  "id": "umd-b6859c70ea83",
+  "kind": "event",
+  "title": "Pragda Spanish Film Festival: BACURAU",
+  "description": "Director: Juliano Dornelles / 2h 11m / 2019 Drama Language: Portuguese with English subtitles Cast: Bárbara Colen, Thomás Aquino, Silvero Pereira The film will be introduced by Parker Brookie, Festival Coordinator, SPAP The festival was made possible by support from Pragda Spanish Film Club, the School of Languages, Literatures and Cultures, Spanish & Portuguese Department, The Latin American & Caribbean Studies Center & The Cinema & Media Studies Program. IMDB Synopsis",
+  "tags": [
+   "Movie",
+   "Festival"
+  ],
+  "location": "Jimenez Hall",
+  "date": "2026-10-07",
+  "time": "16:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 1,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/Bacurau_Landscape_Eng_1080.jpg?w=1500&h=750&auto=compress%2Cformat&fit=crop&dm=1790548341&s=0b5081303ae8540e12e9eb7942b4522d"
+ },
+ {
+  "id": "umd-org-korean-pop-dance-club",
+  "kind": "group",
+  "title": "Korean Pop Dance Club",
+  "description": "A UMD student organization with 19 events coming up, including “Ganji Workshop” and “Ganji Club Night”.",
+  "tags": [
+   "Music",
+   "Workshop",
+   "Arts"
+  ],
+  "location": "Terpzone Activity Room (in STAMP)",
+  "date": "",
+  "time": "",
+  "meetingDetails": "Next event: Oct 5 · 6:00 PM",
+  "demo": false,
+  "color": 2,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/d19d9e8a-a10b-4995-a1a7-c32ed8b5624bd18e083d-fcbf-4795-a6ed-01e60df62d73.png?preset=large-w"
+ },
+ {
+  "id": "umd-4038a6af8c00",
+  "kind": "event",
+  "title": "Leslie Jones",
+  "description": "Ever since her 2014 breakout year on “Saturday Night Live”, comedian Leslie Jones' star has skyrocketed to the point where it's no exaggeration to call her one of the world's funniest and most beloved comedians. A multiple Emmy Award-nominee, Jones has become a recognizable face as the host of “Supermarket Sweep,” “The Daily Show”, the BET Awards and the MTV Movie Awards, along with regular appearances on “Celebrity Wheel of Fortune” and “RuPaul's Drag Race.” Well-known on the silver screen as one of the core cast for the 2016 reboot of “Ghostbusters,” Jones has also established herself as a…",
+  "tags": [
+   "Movie",
+   "Comedy",
+   "Arts"
+  ],
+  "location": "Dekelboum Concert Hall, The Clarice Smith Performing Arts Center",
+  "date": "2026-10-07",
+  "time": "20:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 3,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://theclarice.umd.edu/sites/default/files/2025-06/leslie-jones.jpg"
+ },
+ {
+  "id": "umd-f37a766e018b",
+  "kind": "event",
+  "title": "Mini Festival of India",
+  "description": "Festival of India is an exhibit that tours North America to provide a resource to the world for exploration and self-realization. Students seeking a taste of India culture weave through colored tents on McKeldin Mall. What they receive at the Bhagavad Gita Club-sponsored event delves much deeper into spiritual Hinduism than into cultural customs.",
+  "tags": [
+   "Arts",
+   "Cultural",
+   "Food"
+  ],
+  "location": "Hornbake Plaza",
+  "date": "2026-10-08",
+  "time": "12:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 0,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/778ae689-2f9e-4ec8-830b-8943afaa7871c12eb0ce-4e18-4e1d-a98a-5f401d08bceb.png?preset=large-w"
+ },
+ {
+  "id": "umd-0f8a0999829f",
+  "kind": "event",
+  "title": "\"The District of Pupusas\" (2026): Film Screening and Q&A with Filmmaker Alexandra Colón-Amil",
+  "description": "“District of Pupusas” (2026; Dirs. Alexandra Colón-Amil and Valeria Massarelli) tells the story of how Salvadoran immigrants transformed Washington, D.C. through food, culture, and community. This is not just a film about food. It is about how communities are built, how culture travels, and how identity is preserved and transformed across generations. Pupusas may be Salvadoran, but they have become an emblematic dish of Washington, D.C.",
+  "tags": [
+   "Movie",
+   "Lecture"
+  ],
+  "location": "Jimenez Hall",
+  "date": "2026-10-08",
+  "time": "17:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 1,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/09c385e5-51d1-5536-33d3-7e0920526d03.jpeg?w=1600&h=900&auto=compress%2Cformat&fit=crop&dm=1790547838&s=c43462e91be548aa0e40e9fe6d14cbc8"
+ },
+ {
+  "id": "umd-3af0aba2a290",
+  "kind": "event",
+  "title": "Homecoming T-Shirt Upcycling",
+  "description": "Hello, UMD students! Join us for a fun homecoming event to learn how to create a new outfit from a UMD T-shirt! No sewing required, but be ready to cut and knot your shirt!",
+  "tags": [
+   "Workshop",
+   "Social",
+   "Festival"
+  ],
+  "location": "VMH 1303",
+  "date": "2026-10-08",
+  "time": "17:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 2,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/23f99334-2585-402d-a669-f0ebe00c4aa2cff0d04a-f11d-490a-8710-c512aca7d372.png?preset=large-w"
+ },
+ {
+  "id": "umd-org-jammin-at-maryland",
+  "kind": "group",
+  "title": "Jammin' at Maryland",
+  "description": "A UMD student organization with 19 events coming up, including “Jammin' at Maryland Fall Meetings 2026 (08 Sep - 05 Nov)” and “2026 Jammin' at Maryland Fall Showcase 1”.",
+  "tags": [
+   "Arts",
+   "Music",
+   "Social"
+  ],
+  "location": "Baltimore Room, Stamp Student Union",
+  "date": "",
+  "time": "",
+  "meetingDetails": "Next event: Oct 6 · 7:30 PM",
+  "demo": false,
+  "color": 3,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/39ce92db-9ac7-4833-a74a-0124c85823a8c86c4420-c801-4b7c-ab2c-df5514740991.png?preset=large-w"
+ },
+ {
+  "id": "umd-190db64df0e6",
+  "kind": "event",
+  "title": "Maryland Women's Soccer vs Nebraska",
+  "description": "Cheer on the Maryland Terrapins women's soccer team at Ludwig Field! Support our student-athletes as they compete on their home pitch.",
+  "tags": [
+   "Sports"
+  ],
+  "location": "Ludwig Field",
+  "date": "2026-10-08",
+  "time": "19:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 0,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/Events_WSOC.jpg?w=2500&h=1667&auto=compress%2Cformat&fit=crop&dm=1771525424&s=2b4db3b8bf240d401408d1ad0a5e0164"
+ },
+ {
+  "id": "umd-2a8d503ade55",
+  "kind": "event",
+  "title": "Korean Alphabet Day Celebration",
+  "description": "The only man-made letter system in the World, Hangeul is 580 years old this year. We will have Korean snacks, a Korean calligraphy activity and more for students. Come join us to celebrate Korean Alphabet Day.",
+  "tags": [
+   "Festival"
+  ],
+  "location": "St. Mary's Hall",
+  "date": "2026-10-09",
+  "time": "11:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 1,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/Untitled-design_0.jpg?w=1920&h=1080&auto=compress%2Cformat&fit=crop&dm=1790547614&s=295b0151d155793e2484872e94b46db3"
+ },
+ {
+  "id": "umd-546c3954c577",
+  "kind": "event",
+  "title": "Mr. Burns: A Post-Electric Play",
+  "description": "When the power goes out, what stories survive? In Anne Washburn’s Mr. Burns, A Post‑Electric Play, a band of survivors huddles around a fire and retells The Simpsons episode, “Cape Feare.” As the years pass, commercial jingles become parables, pop songs turn into hymns and TV characters (like the titular Mr. Burns) transform into mythic figures of the time before the collapse. Wildly funny and unexpectedly moving, Mr. Burns is a genre-bending mash-up of theater, pop culture, opera and commedia dell’arte with “depths of feeling to match its breadth of imagination” (The New York Times).",
+  "tags": [
+   "Comedy",
+   "Theater",
+   "Dance"
+  ],
+  "location": "Kay Theatre, The Clarice Smith Performing Arts Center",
+  "date": "2026-10-09",
+  "time": "19:30",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 2,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://theclarice.umd.edu/sites/default/files/2026-08/MR%20BURNS%20EMAIL%20600x400.png"
+ },
+ {
+  "id": "umd-6c9fa556adf1",
+  "kind": "event",
+  "title": "Maryland Men's Soccer vs Michigan State",
+  "description": "Cheer on the Maryland Terrapins men's soccer team at Ludwig Field! Support our student-athletes as they compete on their home pitch.",
+  "tags": [
+   "Sports"
+  ],
+  "location": "Ludwig Field",
+  "date": "2026-10-09",
+  "time": "19:30",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 3,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/Events_MSOC.jpg?w=2500&h=1667&auto=compress%2Cformat&fit=crop&dm=1771525413&s=5f0f0bf10777d76e9223570a584faf78"
+ },
+ {
+  "id": "umd-org-forward-motion-dance-company",
+  "kind": "group",
+  "title": "Forward Motion Dance Company",
+  "description": "A UMD student organization with 14 events coming up, including “Forward Motion Dance Company Practice”.",
+  "tags": [
+   "Dance"
+  ],
+  "location": "The Clarice Smith Performing Arts Center",
+  "date": "",
+  "time": "",
+  "meetingDetails": "Next event: Oct 4 · 1:00 PM",
+  "demo": false,
+  "color": 0,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/ec260513-5ccf-482a-8112-53ab5537f10d6b3a6e2a-bfa1-46e2-a6ec-4196b277bcd2.png?preset=large-w"
+ },
+ {
+  "id": "umd-5d0aaa93182f",
+  "kind": "event",
+  "title": "Another Look, Another World (Insect Art) Exhibition",
+  "description": "Another Look, Another World is an interdisciplinary exhibition exploring how visual art may deepen our understanding of Maryland’s insect biodiversity and inspire greater appreciation for the ecological roles insects play in our environment. The exhibition is part of a University of Maryland Arts for All-funded project aimed at engaging students in science communication through art, increasing awareness of insect biodiversity and ecological roles, fostering collaboration across disciplines, evaluating changes in attendee knowledge, attitudes, and intentions, and contributing to a replicable…",
+  "tags": [
+   "Arts"
+  ],
+  "location": "Parren J. Mitchell Art-Sociology Building",
+  "date": "2026-10-14",
+  "time": "09:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 1,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/Copy-of-Insect-Art-Show-Page-Hero-Image.jpg?w=1580&h=640&auto=compress%2Cformat&fit=crop&dm=1789670852&s=a1110b5839fb086f07a564500b035db3"
+ },
+ {
+  "id": "umd-c3ddeed57b24",
+  "kind": "event",
+  "title": "Nyumburu Homecoming Fish Fry",
+  "description": "The Black Faculty & Staff Association in conjunction with Nyumburu Cultural Center presents 19th annual Homecoming fish fry! Payment details coming soon. Contact carswell@umd.edu with questions.",
+  "tags": [
+   "Cultural",
+   "Festival"
+  ],
+  "location": "Nyumburu Cultural Center",
+  "date": "2026-10-15",
+  "time": "11:30",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 2,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/IMG_2501.jpeg?w=1230&h=1599&auto=compress%2Cformat&fit=crop&dm=1790111615&s=4612a2fa9f92a77e4c52198c8caf93d5"
+ },
+ {
+  "id": "umd-918798a0fbdf",
+  "kind": "event",
+  "title": "SEE Presents: Homecoming Comedy Show ft Sal Vulcano & Josh Johnson",
+  "description": "Get ready to celebrate UMD’s homecoming week celebration with a night full of laughter at SEE's annual Homecoming Comedy Show! Taking place at xfinity center, join SEE. Sal Vulcano, and Josh Johnson for an unforgettable night! WHEN: Thursday October 15th at 8pm WHERE: Xinity Center WHO: Admission to General Public and UMD Community. Doors open at 6:30pm with an official close time at 8:30pm! Tickets will go on sale Tuesday, September 8th at 12pm. Tickets can be found at the website UMDTickets.com or through the link in our bio once released!",
+  "tags": [
+   "Comedy",
+   "Social",
+   "Festival"
+  ],
+  "location": "Xfinity Center",
+  "date": "2026-10-15",
+  "time": "19:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 3,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/38cbd0a2-cd1a-4c0d-b93e-8fdbd748153b98516156-1f67-4a79-adc8-30028c3727b9.png?preset=large-w"
+ },
+ {
+  "id": "umd-b7169206a3bf",
+  "kind": "event",
+  "title": "Maryland Honors Anniversary Celebration",
+  "description": "On Friday, October 16, during Homecoming weekend, we will gather to celebrate the 60th anniversary of Maryland Honors (the General Honors Program; the University Honors Program; and the Honors College); the 30th anniversaries of the Gemstone and Honors Humanities programs; and the 15th anniversary of the Integrated Life Sciences program. There is much to celebrate! Honors alumni from across the decades and all iterations of Honors programs are invited to return to campus to reconnect with classmates, faculty and staff, and former directors.",
+  "tags": [
+   "Festival"
+  ],
+  "location": "Tawes Hall",
+  "date": "2026-10-16",
+  "time": "15:11",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 0,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/Honors-Stock-Photo-for-Event.jpg?w=1024&h=684&auto=compress%2Cformat&fit=crop&dm=1790191396&s=d0fdedd4e0d4db8a4cc9d2902b819cfc"
+ },
+ {
+  "id": "umd-org-the-beekeeping-club",
+  "kind": "group",
+  "title": "The Beekeeping Club",
+  "description": "A UMD student organization with 14 events coming up, including “Hive Check” and “General Body Meeting”.",
+  "tags": [
+   "Academic"
+  ],
+  "location": "UMD Research Greenhouse",
+  "date": "",
+  "time": "",
+  "meetingDetails": "Next event: Oct 10 · 11:00 AM",
+  "demo": false,
+  "color": 1,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/53efce33-324e-4566-b905-3d2abff052de6525823f-9c8e-4f57-b6ac-16b0e16721c4.png?preset=large-w"
+ },
+ {
+  "id": "umd-ebdfedb801b4",
+  "kind": "event",
+  "title": "Homecoming Terp Carnival",
+  "description": "Join us on the Mall to celebrate Homecoming with the Mighty Sound of Maryland, Homecoming swag—including the Homecoming scarf—prizes throughout the night, and a fireworks finale to close out the evening.",
+  "tags": [
+   "Social",
+   "Food",
+   "Nightlife"
+  ],
+  "location": "McKeldin Mall",
+  "date": "2026-10-16",
+  "time": "16:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 2,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://static.campuslabsengage.com/discovery/images/events/social.jpg"
+ },
+ {
+  "id": "umd-cf2b6c2a5c88",
+  "kind": "event",
+  "title": "UMD Pride Felt Pennant Keychains",
+  "description": "Join Studio A on the mall during Terp Carnival to make your own mini pennant keychain to showcase your Terp Pride!",
+  "tags": [
+   "Cultural",
+   "Festival"
+  ],
+  "location": "The Mall",
+  "date": "2026-10-16",
+  "time": "18:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 3,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/67094202-d02e-4ee5-af82-8dd12e8cc4582d3e7058-5698-4377-a190-ea87da005eed.png?preset=large-w"
+ },
+ {
+  "id": "umd-c8c101f24287",
+  "kind": "event",
+  "title": "Maryland Women's Soccer vs Iowa",
+  "description": "Cheer on the Maryland Terrapins women's soccer team at Ludwig Field! Support our student-athletes as they compete on their home pitch.",
+  "tags": [
+   "Sports"
+  ],
+  "location": "Ludwig Field",
+  "date": "2026-10-16",
+  "time": "19:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 0,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/Events_WSOC.jpg?w=2500&h=1667&auto=compress%2Cformat&fit=crop&dm=1771525424&s=2b4db3b8bf240d401408d1ad0a5e0164"
+ },
+ {
+  "id": "umd-41969afe1fc6",
+  "kind": "event",
+  "title": "UMD NPHC All Nite-Ish Homecoming Step Show",
+  "description": "ALL NITE-ISH 2026 IS HERE! All Nite-Ish is an annual celebration of the culture, talent, and unity of the Divine Nine organizations on our campus. Year after year, this flagship event brings together students, alumni, and community members for a night that celebrates the strength, legacy, and spirit of our NPHC community. This year, we’re kicking off NPHC Homecoming Weekend in style! Come one, come all, and join us for All Nite-Ish 2026! There’s no better way to start Homecoming than with an unforgettable night of energy, culture, and Divine Nine excellence.",
+  "tags": [
+   "Festival"
+  ],
+  "location": "Ritchie Coliseum",
+  "date": "2026-10-16",
+  "time": "19:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 1,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://umd-calendar.transforms.svdcdn.com/production/hero-images/Full-NPHC-Photo.jpg?w=1694&h=786&auto=compress%2Cformat&fit=crop&dm=1788551306&s=bfd2e311df3b8863ff3d2a037278bd92"
+ },
+ {
+  "id": "umd-org-erasable-inc",
+  "kind": "group",
+  "title": "Erasable Inc.",
+  "description": "A UMD student organization with 11 events coming up, including “Erasable Inc Friday Show” and “INCwell”.",
+  "tags": [
+   "Comedy",
+   "Arts",
+   "Social"
+  ],
+  "location": "McKeldin Mall Steps",
+  "date": "",
+  "time": "",
+  "meetingDetails": "Next event: Oct 9 · 1:00 PM",
+  "demo": false,
+  "color": 2,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/8e2df651-12c7-4786-aec5-7c7289937d56a659ab74-380d-47ec-8408-1916288fee0f.png?preset=large-w"
+ },
+ {
+  "id": "umd-3259553e76b1",
+  "kind": "event",
+  "title": "UMD Law School Fair 2026",
+  "description": "The University of Maryland's Pre-Law Advising Office is partnering with the University Career Center to present the annual UMD Law School Fair on Monday, October 19, 2026, from 11:00 a.m. to 2:00 p.m. in the Stamp Student Union, Colony Ballroom. This event is open to University of Maryland, College Park students & alumni, as well as other students in the Washington, DC region. No registration necessary.",
+  "tags": [
+   "Career",
+   "Academic",
+   "Festival"
+  ],
+  "location": "STAMP Student Union, Colony Ballroom",
+  "date": "2026-10-19",
+  "time": "11:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 3,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/cddde88a-e8f6-4016-ac97-c0fd4c9a82bafc92ea51-76a1-436c-9828-ccbb594e1b40.png?preset=large-w"
+ },
+ {
+  "id": "umd-b212e7402568",
+  "kind": "event",
+  "title": "Jazz Jams at Busboys and Poets",
+  "description": "A partnership between Clarice Presents and Busboys and Poets, Jazz Jams bring D.C.-based saxophonist Elijah Jamal Balbed to perform and lead a community-wide jam! Balbed's band will play a set starting at 7:30PM. Bring your instrument: after enjoying their set, you’ll have a chance to call a tune! Participation in our jazz jams is free but is not obligatory. Support for Clarice Presents Support for Clarice Presents comes from the Maryland State Arts Council. This event is also made possible by Busboys and Poets.",
+  "tags": [
+   "Concert",
+   "Music",
+   "Arts"
+  ],
+  "location": "Busboys and Poets Hyattsville",
+  "date": "2026-10-21",
+  "time": "19:30",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 0,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://theclarice.umd.edu/sites/default/files/2025-06/jazz-jam_0.jpg"
+ },
+ {
+  "id": "umd-e08fa98f1e0c",
+  "kind": "event",
+  "title": "Yeison Landero",
+  "description": "Hailing from the heart of Colombia’s Caribbean region, Yeison Landero has his grandfather “King of Cumbia” Andrés Landero's lifelong passion for cumbia and the accordion. Carrying this immense legacy, Yeison has become one of the world’s leading cumbianeros, creating a signature musical style you won’t find elsewhere. Yeison is dedicated to captivating audiences with his ancestral accordion and has taken cumbia from Colombia, to the Hollywood Bowl in Los Angeles, to New York City’s Lincoln Center, to Canada, Europe, Africa and beyond.",
+  "tags": [
+   "Theater",
+   "Arts",
+   "Cultural"
+  ],
+  "location": "Kay Theatre, The Clarice Smith Performing Arts Center",
+  "date": "2026-10-23",
+  "time": "20:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 1,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://theclarice.umd.edu/sites/default/files/2026-06/Yeison%20Landero.png"
+ },
+ {
+  "id": "umd-f1d7a37f8a5a",
+  "kind": "event",
+  "title": "Faculty Artist Series: Sarah Frisof, Jonathan Bisesi, Edouard Beyens & James Wyman",
+  "description": "UMD Associate Professor of Flute Sarah Frisof is joined by UMD Percussion faculty Jonathan Bisesi, Edouard Beyens and James Wyman to perform contemporary works for flute and percussion by Lou Harrison, George Crumb, Jane Stanley, Melody Eötvös, Juri Seo and Jonathan Bisesi.",
+  "tags": [
+   "Arts"
+  ],
+  "location": "Gildenhorn Recital Hall, The Clarice Smith Performing Arts Center",
+  "date": "2026-10-26",
+  "time": "20:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 2,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://theclarice.umd.edu/sites/default/files/2026-09/SOMInsets.jpeg"
+ },
+ {
+  "id": "umd-org-world-languages-club-at-the-university-o",
+  "kind": "group",
+  "title": "World Languages Club at the University of Maryland",
+  "description": "A UMD student organization with 9 events coming up, including “General Body Meeting”.",
+  "tags": [],
+  "location": "Math B0421",
+  "date": "",
+  "time": "",
+  "meetingDetails": "Next event: Oct 5 · 5:00 PM",
+  "demo": false,
+  "color": 3,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/3a96ee91-7e41-4b60-a8f2-920e5fc6166f652b45c9-e0a3-4471-83c3-067f9559bf4a.png?preset=large-w"
+ },
+ {
+  "id": "umd-8592160e14c1",
+  "kind": "event",
+  "title": "Environmental & GIS Career Fair",
+  "description": "The University of Maryland's annual Environmental and GIS Career Fair connects undergraduate and graduate students, plus recent alumni, with employers seeking to hire for full-time and part-time positions and internships in environmental policy, communication, research, GIS, conservation, sustainability, and related fields. Don't miss this exciting opportunity! Join us on Wednesday, October 28, 2026, from 10:00 a.m. - 12:00 p.m. in the Stamp Student Union - Atrium to connect with employers in your career fields of interest.",
+  "tags": [
+   "Career",
+   "Research",
+   "Festival"
+  ],
+  "location": "Stamp Student Union, Atrium",
+  "date": "2026-10-28",
+  "time": "10:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 0,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/402c8702-5b14-4005-8337-ec9d3dbd1fc3167783f2-a46e-4957-b9f0-c9b29d668fb6.png?preset=large-w"
+ },
+ {
+  "id": "umd-a8e2c2196e54",
+  "kind": "event",
+  "title": "Experimental Performance Series # 1",
+  "description": "The Experimental Performance Series is a collection of self-produced works from undergraduate and graduate students in theatre and dance, ranging from established works to brand new plays and choreography. This performance will feature original works by Milo Longenecker (2nd-year Dance MFA) and Evey Vo (2nd-year Media Design MFA).",
+  "tags": [
+   "Theater",
+   "Dance",
+   "Arts"
+  ],
+  "location": "Cafritz Foundation Theatre, The Clarice Smith Performing Arts Center",
+  "date": "2026-11-07",
+  "time": "14:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 1,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://theclarice.umd.edu/sites/default/files/2026-09/Experimental%20Performance%20Series%20%23%201.png"
+ },
+ {
+  "id": "umd-af6ea6cde4b5",
+  "kind": "event",
+  "title": "Zlatomir Fung Plays Bach Cello Suites",
+  "description": "Following his Clarice Smith Performing Arts Center debut with the UMD Symphony Orchestra in Elgar’s Cello Concerto, Zlatomir Fung presents selections from Johann Sebastian Bach’s cello suites in our intimate Gildenhorn Recital Hall. Winner of the First Prize in the cello division of the International Tchaikovsky Competition in 2019, he has garnered countless accolades, critical acclaim and has delighted audiences with his boundless expressivity. Considered a pinnacle in cello literature, J.S.",
+  "tags": [
+   "Concert",
+   "Music",
+   "Arts"
+  ],
+  "location": "Gildenhorn Recital Hall, The Clarice Smith Performing Arts Center",
+  "date": "2026-11-08",
+  "time": "15:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 2,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://theclarice.umd.edu/sites/default/files/2026-06/Zlatomir%20Fung.png"
+ },
+ {
+  "id": "umd-76159404ecbb",
+  "kind": "event",
+  "title": "Guest Artist Series: Piano Masterclass with Anne Epperson",
+  "description": "Pianist Anne Epperson has enjoyed a distinguished career as a performer, recording artist, teacher and clinician. Critics have praised her collaborative artistry: “an excellent partner . . . technical ability and musicality admirably displayed” (The New York Times), “extraordinarily sensitive and well-realized work . . . a gifted accompanist” (The Seattle Times), “eloquent support” (Los Angeles Times), “Epperson is a chamber music pianist with few peers” (Cleveland Plain Dealer).",
+  "tags": [
+   "Music",
+   "Arts",
+   "Career"
+  ],
+  "location": "Gildenhorn Recital Hall, The Clarice Smith Performing Arts Center",
+  "date": "2026-11-13",
+  "time": "09:30",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 3,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://theclarice.umd.edu/sites/default/files/2026-10/Inset%20Images.png"
+ },
+ {
+  "id": "umd-org-terrapin-trail-club",
+  "kind": "group",
+  "title": "Terrapin Trail Club",
+  "description": "A UMD student organization with 9 events coming up, including “Terrapin Trail Club GBM”.",
+  "tags": [
+   "Social",
+   "Outdoors"
+  ],
+  "location": "JMZ Jimenez Building Room 0220",
+  "date": "",
+  "time": "",
+  "meetingDetails": "Next event: Oct 5 · 7:00 PM",
+  "demo": false,
+  "color": 0,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://se-images.campuslabs.com/clink/images/79170d89-5b55-40b3-965d-f09f9b3934d2ed4e34f9-13a0-4b6c-9fcd-b884322d7ee1.png?preset=large-w"
+ },
+ {
+  "id": "umd-c2d775e61bc8",
+  "kind": "event",
+  "title": "Fall Chamber Music Showcase",
+  "description": "Semesterly chamber music recitals showcase students' creativity, initiative, collaboration and agency through the unique medium of chamber music. These recitals feature a broad range of styles and repertoire presented in a fresh, lively way.",
+  "tags": [
+   "Music",
+   "Arts"
+  ],
+  "location": "Dekelboum Concert Hall, The Clarice Smith Performing Arts Center",
+  "date": "2026-11-16",
+  "time": "20:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 1,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://theclarice.umd.edu/sites/default/files/2026-08/180316IMG_5522GeoffSheil.jpg"
+ },
+ {
+  "id": "umd-d42473c3b568",
+  "kind": "event",
+  "title": "The Rape of Lucretia: Maryland Opera Studio",
+  "description": "Benjamin Britten, composer Ronald Duncan, librettist J. Bradley Baker, conductor Gregory Keng Strasser, director Maryland Opera Studio performs Benjamin Britten’s The Rape of Lucretia, an emotionally raw chamber opera that's tragic plot begs us to reflect on violence, misogyny, the abuse of power and how these themes continue to haunt society. A group of soldiers decide to test the loyalty of the wives left behind at home, unleashing a cruel and reckless chain of events that have devastating consequences.",
+  "tags": [
+   "Music",
+   "Theater",
+   "Arts"
+  ],
+  "location": "Kay Theatre, The Clarice Smith Performing Arts Center",
+  "date": "2026-11-18",
+  "time": "19:30",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 2,
+  "createdAt": "2026-10-04T14:23:11Z",
+  "image": "https://theclarice.umd.edu/sites/default/files/2026-05/161115IMG_9153GeoffSheil.jpg"
+ },
+ {
+  "id": "umd-29014936fc6c",
+  "kind": "event",
+  "title": "Guest Lecture: Dr. Axel Krieger, JHU",
+  "description": "Join the University of Maryland MATRIX Lab's next Evening@SMART presentation, which features the series' first external speaker. Evening@SMART is a series of presentations and discussions related to autonomous systems and artificial intelligence that highlight research, breakthroughs, cutting-edge tech, and unique perspectives. October 7, 2026: Dr. Axel Krieger Dr.",
+  "tags": [
+   "Research",
+   "Lecture"
+  ],
+  "location": "USMSM SMART Building",
+  "date": "2026-10-07",
+  "time": "17:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 3,
+  "createdAt": "2026-10-04T14:23:11Z"
+ },
+ {
+  "id": "umd-6a7a6f8078b6",
+  "kind": "event",
+  "title": "When UMD Was the Center of the Internet",
+  "description": "Please join the Division of IT, Division of Research, and College of Computer, Mathematical, and Natural Sciences for a special event: When UMD Was the Center of the Internet Exploring the University of Maryland’s role in establishing the early foundations of the internet Wednesday, October 21, 2026 Pre-Event Reception: 4-4:30 p.m. Event Begins: 4:30 p.m. Edward St. John Learning & Teaching Center, Rm.",
+  "tags": [
+   "Career",
+   "Research"
+  ],
+  "location": "Edward St. John Learning and Teaching Center",
+  "date": "2026-10-21",
+  "time": "16:00",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 0,
+  "createdAt": "2026-10-04T14:23:11Z"
+ },
+ {
+  "id": "umd-e948cbb9d7c5",
+  "kind": "event",
+  "title": "AR Sandbox Demo",
+  "description": "The AR Sandbox is an interactive educational and technology that combines elements of augmented reality with a physical box containing white sand. It allows users to model 3D topographic features like mountains, valleys, rivers, or even simulations of ecosystems, displayed in real-time on the sand's surface making it an engaging, immersive and educational experience. As users manipulate the sand, the virtual terrain adjusts accordingly. The Sandbox has potential applications in Geography, Geology, Hydrology, Environmental Science, as well as general spatial awareness and interactive learning.",
+  "tags": [
+   "Technology",
+   "Research",
+   "Workshop"
+  ],
+  "location": "STEM Library",
+  "date": "2026-10-27",
+  "time": "12:30",
+  "meetingDetails": "",
+  "demo": false,
+  "color": 1,
+  "createdAt": "2026-10-04T14:23:11Z"
+ }
+]

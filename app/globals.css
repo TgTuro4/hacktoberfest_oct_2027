@@ -89,6 +89,8 @@ kbd { font-family: var(--body); display: inline-grid; place-items: center; min-w
 .poster { position: relative; display: block; overflow: hidden; border-radius: 22px; isolation: isolate; color: var(--white); background: var(--red); box-shadow: 0 1px 2px rgba(0,0,0,.18), 0 14px 34px -14px rgba(0,0,0,.45); }
 .poster-art { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
 .poster-bend { position: absolute; left: -30%; right: -30%; top: 30%; height: 76px; transform: rotate(-32deg); background: repeating-linear-gradient(90deg, var(--stripe-a) 0 26px, var(--stripe-b) 26px 52px); }
+.poster-photo-bg { position: absolute; inset: -12%; width: 124%; height: 124%; object-fit: cover; filter: blur(22px) saturate(1.1) brightness(.5); pointer-events: none; }
+.poster-photo { filter: brightness(.78); position: absolute; left: 0; top: 6%; width: 100%; height: 52%; object-fit: contain; user-select: none; -webkit-user-drag: none; pointer-events: none; }
 .poster-glyph { position: absolute; top: 7%; right: -5%; width: 64%; height: auto; color: var(--glyph); transform: rotate(-10deg); }
 .poster::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(to top, rgba(0,0,0,.9) 0%, rgba(0,0,0,.62) 26%, rgba(0,0,0,0) 54%); pointer-events: none; }
 
@@ -99,7 +101,7 @@ kbd { font-family: var(--body); display: inline-grid; place-items: center; min-w
 .tone-3 .poster-glyph { background: var(--red); border-radius: 24%; padding: 7%; width: 58%; right: -4%; top: 4%; }
 
 .poster-top { position: absolute; top: 14px; left: 14px; right: 14px; display: flex; justify-content: space-between; gap: 8px; }
-.poster-chip { font-size: 15px; font-weight: 700; padding: 7px 15px; border-radius: 999px; background: var(--white); color: var(--black); line-height: 1.3; }
+.poster-chip { box-shadow: 0 1px 8px rgba(0,0,0,.3); font-size: 15px; font-weight: 700; padding: 7px 15px; border-radius: 999px; background: var(--white); color: var(--black); line-height: 1.3; }
 .deck .poster-chip { display: inline-flex; align-items: center; height: 38px; padding: 0 17px; }
 .poster-info-btn { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--white); color: var(--black); box-shadow: 0 2px 8px rgba(0,0,0,.25); transition: transform 140ms var(--ease-out); }
 .poster-info-btn:hover { transform: scale(1.1); }
@@ -108,6 +110,9 @@ kbd { font-family: var(--body); display: inline-grid; place-items: center; min-w
 .poster-info h2 { font-size: clamp(38px, 9vw, 48px); line-height: .92; text-transform: none; overflow-wrap: anywhere; margin-bottom: 6px; text-shadow: 0 1px 12px rgba(0,0,0,.35); }
 .poster-info p { display: flex; align-items: center; gap: 7px; font-size: 15px; font-weight: 500; overflow-wrap: anywhere; }
 .poster-info p svg { flex-shrink: 0; opacity: .85; }
+/* Photos are busy, so give the text more to sit on. */
+.poster.has-photo::after, .deck .poster.has-photo::after { background: linear-gradient(to top, rgba(0,0,0,.96) 0%, rgba(0,0,0,.88) 30%, rgba(0,0,0,.5) 50%, rgba(0,0,0,.12) 68%, rgba(0,0,0,0) 80%); }
+.has-photo .poster-info h2 { text-shadow: 0 2px 14px rgba(0,0,0,.7); }
 .poster-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
 .poster-tags span { font-size: 13px; font-weight: 600; padding: 4px 11px; border-radius: 999px; background: rgba(255,255,255,.18); border: 1px solid rgba(255,255,255,.35); backdrop-filter: blur(6px); }
 
@@ -134,7 +139,8 @@ kbd { font-family: var(--body); display: inline-grid; place-items: center; min-w
 .feed-count { margin-left: auto; color: var(--muted); font-size: 13px; white-space: nowrap; }
 
 .discover-layout { display: grid; gap: 28px; }
-.deck-column { display: flex; flex-direction: column; align-items: center; min-width: 0; }
+/* The deck sits above the details panel so a swiped card slides over it, never under it. */
+.deck-column { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; min-width: 0; }
 /* Deck fills the space between the filter chips and the tab bar, so the buttons never fall below the fold. */
 .deck { position: relative; width: 100%; max-width: 420px; height: clamp(360px, calc(100svh - 212px - env(safe-area-inset-top) - env(safe-area-inset-bottom)), 720px); }
 .deck .poster { height: 100%; }
@@ -168,7 +174,7 @@ kbd { font-family: var(--body); display: inline-grid; place-items: center; min-w
 .key-hint { display: none; }
 
 .card-details:focus { outline: none; }
-.card-details { width: 100%; max-width: 420px; margin: 0 auto; background: var(--white); border-radius: 22px; padding: 24px 22px; scroll-margin-top: 76px; }
+.card-details { position: relative; z-index: 1; width: 100%; max-width: 420px; margin: 0 auto; background: var(--white); border-radius: 22px; padding: 24px 22px; scroll-margin-top: 76px; }
 .card-details h3 { font-size: 28px; margin-bottom: 12px; }
 .card-description { font-size: 16px; line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; max-width: 62ch; }
 .card-description.muted { color: var(--muted); }

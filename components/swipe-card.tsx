@@ -113,7 +113,7 @@ export function SwipeCard({ item, next, onDecision, canUndo, onUndo }: { item: C
       </div>
       <p className="key-hint"><span><kbd aria-label="Left arrow">←</kbd> Pass</span><span><kbd aria-label="Right arrow">→</kbd> Interested</span></p>
     </div>
-    <section id="card-details" className="card-details" tabIndex={-1} aria-label={`Details for ${item.title}`}>
+    <section id="card-details" className="card-details" tabIndex={-1} aria-label={`Details for ${item.title}`} style={{ filter: `grayscale(${progress}) brightness(${1 - 0.32 * progress})`, transition: settle ? `filter ${exitMs}ms ease` : "none" }}>
       <h3>About this {item.kind}</h3>
       {item.description ? <p className="card-description">{item.description}</p> : <p className="card-description muted">The organizers haven’t added a description yet.</p>}
       {item.tags.length > 0 && <div className="tags">{item.tags.map(tag => <span key={tag}>{tag}</span>)}</div>}
